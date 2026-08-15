@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivoire Tech Solutions — Data Science, IA, IT & Cybersécurité à Abidjan</title>
+    <meta name="description" content="Cabinet de conseil en data science, IA, solutions IT et cybersécurité basé à Abidjan. Nous accompagnons banques, télécoms, agro-industries, santé, distribution et secteur public en Côte d'Ivoire et en Afrique.">
+    <meta name="author" content="Ivoire Tech Solutions">
+    <meta name="theme-color" content="#1B3A5C">
+    <link rel="canonical" href="https://ivtech-solutions.netlify.app/">
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ivoire Tech Solutions — L'intelligence des données au service de la performance africaine">
+    <meta property="og:description" content="Data science, intelligence artificielle, solutions IT et cybersécurité sur mesure pour les entreprises africaines. Basé à Abidjan, Côte d'Ivoire.">
+    <meta property="og:url" content="https://ivtech-solutions.netlify.app/">
+    <meta property="og:image" content="https://ivtech-solutions.netlify.app/assets/images/IvTech-Logo-Symbole-Couleur.svg">
+    <meta property="og:locale" content="fr_FR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ivoire Tech Solutions — Data Science, IA, IT & Cybersécurité">
+    <meta name="twitter:description" content="L'intelligence des données au service de la performance africaine.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/IvTech-Logo-Favicon.svg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css?v=20260816-motion">
+
+    <!-- Données structurées -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Ivoire Tech Solutions",
+      "description": "Cabinet de consulting spécialisé en data science, intelligence artificielle, solutions IT sur mesure et cybersécurité.",
+      "url": "https://ivtech-solutions.netlify.app/",
+      "logo": "https://ivtech-solutions.netlify.app/assets/images/IvTech-Logo-Symbole-Couleur.svg",
+      "email": "contact@ivtechsolutions.ci",
+      "founder": { "@type": "Person", "name": "Dr. Franck Antelme KOUASSI" },
+      "areaServed": ["Côte d'Ivoire", "Afrique de l'Ouest", "Afrique francophone"],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Abidjan",
+        "addressRegion": "Cocody",
+        "addressCountry": "CI"
+      },
+      "sameAs": ["https://linkedin.com/company/ivtech-solutions"]
+    }
+    </script>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Aller au contenu</a>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav" aria-label="Navigation principale">
+                <a href="index.html" class="nav__logo" aria-label="Accueil Ivoire Tech Solutions">
+                    <img src="assets/images/IvTech-Logo-Horizontal-Couleur.svg" alt="Ivoire Tech Solutions" width="220" height="82" decoding="async">
+                </a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link active" data-i18n="nav_home">Accueil</a></li>
+                        <li class="nav__item"><a href="a-propos.html" class="nav__link" data-i18n="nav_about">À propos</a></li>
+                        <li class="nav__item"><a href="services.html" class="nav__link" data-i18n="nav_services">Services</a></li>
+                        <li class="nav__item"><a href="approche.html" class="nav__link" data-i18n="nav_approach">Notre Approche</a></li>
+                        <li class="nav__item"><a href="collaborateurs.html" class="nav__link" data-i18n="nav_team">Collaborateurs</a></li>
+                        <li class="nav__item"><a href="contact.html" class="nav__link nav__cta" data-i18n="nav_contact">Contactez-nous</a></li>
+                        <li class="nav__item">
+                            <div class="nav__lang" role="group" aria-label="Langue">
+                                <button type="button" class="lang__link" data-lang="fr" onclick="setLanguage('fr')">FR</button>
+                                <span class="nav__lang-sep" aria-hidden="true">|</span>
+                                <button type="button" class="lang__link" data-lang="en" onclick="setLanguage('en')">EN</button>
+                            </div>
+                        </li>
+                        <li class="nav__item">
+                            <button type="button" class="nav__theme" id="theme-button" aria-label="Activer le thème sombre"><i class="fas fa-moon" aria-hidden="true"></i></button>
+                        </li>
+                    </ul>
+                    <button type="button" class="nav__close" id="nav-close" aria-label="Fermer le menu"><i class="fas fa-times" aria-hidden="true"></i></button>
+                </div>
+                <button type="button" class="nav__toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-controls="nav-menu" aria-expanded="false"><i class="fas fa-bars" aria-hidden="true"></i></button>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero -->
+        <section class="hero" id="accueil">
+            <canvas class="hero__canvas" id="hero-canvas" data-logo="assets/images/IvTech-Logo-Symbole-Couleur.svg" aria-hidden="true"></canvas>
+            <div class="container">
+                <div class="hero__grid">
+                    <div class="hero__content">
+                        <p class="hero__eyebrow" data-aos="fade-up">Ivoire Tech Solutions</p>
+                        <span class="hero__badge" data-aos="fade-up" data-aos-delay="40"><span data-i18n="hero_badge">Data Science · IA · Solutions IT</span></span>
+                        <h1 class="hero__title" data-aos="fade-up" data-aos-delay="80" data-i18n="hero_title">L'intelligence des données au service de la <span class="accent">performance africaine</span></h1>
+                        <p class="hero__subtitle" data-aos="fade-up" data-aos-delay="160" data-i18n="hero_subtitle">De la collecte à l'action : nous faisons parler vos données pour booster vos performances.</p>
+                        <div class="hero__cta" data-aos="fade-up" data-aos-delay="240">
+                            <a href="contact.html" class="btn btn--primary"><span data-i18n="hero_btn_contact">Demander un diagnostic</span> <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                            <a href="services.html" class="btn btn--secondary" data-i18n="hero_btn_services">Explorer nos expertises</a>
+                        </div>
+                        <div class="hero__trust" data-aos="fade-up" data-aos-delay="320">
+                            <span><i class="fas fa-minus" aria-hidden="true"></i> <span data-i18n="hero_trust1">Standards techniques internationaux</span></span>
+                            <span><i class="fas fa-minus" aria-hidden="true"></i> <span data-i18n="hero_trust2">Tarifs adaptés au marché ivoirien & ouest-africain</span></span>
+                            <span><i class="fas fa-minus" aria-hidden="true"></i> <span data-i18n="hero_trust3">100 % focalisé Data Science & IA</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conteneur glissant -->
+        <div class="content-wrapper home-page">
+
+            <!-- Stats -->
+            <section class="stats">
+                <div class="container">
+                    <div class="stats__grid">
+                        <div class="stat__item" data-aos="fade-up">
+                            <div class="stat__number"><span class="counter" data-target="100">100</span><span>%</span></div>
+                            <div class="stat__label" data-i18n="stat1_label">Data, IA & IT</div>
+                        </div>
+                        <div class="stat__item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="stat__number"><span class="counter" data-target="5">5</span></div>
+                            <div class="stat__label" data-i18n="stat3_label">Étapes, du cadrage au suivi</div>
+                        </div>
+                        <div class="stat__item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="stat__number"><span class="counter" data-target="100">100</span><span>%</span></div>
+                            <div class="stat__label" data-i18n="stat4_label">Suivi après livraison</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services -->
+            <section class="section bg-white" id="services">
+                <div class="container">
+                    <div class="section__header" data-aos="fade-up">
+                        <span class="section__subtitle" data-i18n="sec_exp">Nos expertises</span>
+                        <h2 class="section__title" data-i18n="sec_srv">Cinq expertises, du diagnostic à la production</h2>
+                        <p class="section__description" data-i18n="home_srv_d">Cinq expertises pour tirer un bénéfice concret de vos données et sécuriser vos systèmes.</p>
+                    </div>
+                    <div class="services__grid">
+                        <a href="services.html#data-science" class="media-card" data-aos="fade-up">
+                            <img class="media-card__img" src="assets/images/svc-data-science.jpg" alt="Consulting Data Science" loading="lazy">
+                            <span class="media-card__overlay"></span>
+                            <div class="media-card__body">
+                                <h3 data-i18n="srv1_t">Consulting Data Science</h3>
+                                <p data-i18n="home_srv1_d">Audit de vos données, analyses et modèles prédictifs.</p>
+                                <span class="media-card__link"><span data-i18n="srv_link">En savoir plus</span> <i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+                        <a href="services.html#ia" class="media-card" data-aos="fade-up" data-aos-delay="100">
+                            <img class="media-card__img" src="assets/images/svc-ia.jpg" alt="Intelligence Artificielle" loading="lazy">
+                            <span class="media-card__overlay"></span>
+                            <div class="media-card__body">
+                                <h3 data-i18n="srv2_t">Intelligence Artificielle</h3>
+                                <p data-i18n="home_srv2_d">Des modèles conçus pour vos processus, puis mis en production.</p>
+                                <span class="media-card__link"><span data-i18n="srv_link">En savoir plus</span> <i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+                        <a href="services.html#it" class="media-card" data-aos="fade-up" data-aos-delay="200">
+                            <img class="media-card__img" src="assets/images/svc-it.jpg" alt="Solutions IT sur Mesure" loading="lazy">
+                            <span class="media-card__overlay"></span>
+                            <div class="media-card__body">
+                                <h3 data-i18n="srv3_t">Solutions IT sur Mesure</h3>
+                                <p data-i18n="home_srv3_d">Tableaux de bord, applications et flux reliés à votre SI.</p>
+                                <span class="media-card__link"><span data-i18n="srv_link">En savoir plus</span> <i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+                        <a href="services.html#cybersecurite" class="media-card" data-aos="fade-up" data-aos-delay="250">
+                            <img class="media-card__img" src="assets/images/svc-cybersecurite.jpg" alt="Cybersécurité" loading="lazy">
+                            <span class="media-card__overlay"></span>
+                            <div class="media-card__body">
+                                <h3 data-i18n="srv5_t">Cybersécurité</h3>
+                                <p data-i18n="home_srv5_d">Audit SI, durcissement des accès et supervision des vulnérabilités.</p>
+                                <span class="media-card__link"><span data-i18n="srv_link">En savoir plus</span> <i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+                        <a href="services.html#formation" class="media-card" data-aos="fade-up" data-aos-delay="300">
+                            <img class="media-card__img" src="assets/images/svc-formation.jpg" alt="Formation & Accompagnement" loading="lazy">
+                            <span class="media-card__overlay"></span>
+                            <div class="media-card__body">
+                                <h3 data-i18n="srv4_t">Formation & Accompagnement</h3>
+                                <p data-i18n="home_srv4_d">Formations et transfert pour que vos équipes prennent le relais.</p>
+                                <span class="media-card__link"><span data-i18n="srv_link">En savoir plus</span> <i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="text-center mt-5" data-aos="fade-up">
+                        <a href="services.html" class="btn btn--primary"><span data-i18n="btn_srv">Voir tous nos services</span> <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Secteurs -->
+            <section class="section bg-light">
+                <div class="container">
+                    <div class="section__header" data-aos="fade-up">
+                        <span class="section__subtitle" data-i18n="home_sect_sub">Marchés</span>
+                        <h2 class="section__title" data-i18n="sec_sect">Secteurs d'intervention</h2>
+                        <p class="section__description" data-i18n="home_sect_d">Les secteurs où nous intervenons, en Côte d’Ivoire et ailleurs sur le continent.</p>
+                    </div>
+                    <div class="grid sectors-grid">
+                        <a href="services.html#finance" class="media-card media-card--sm" data-aos="fade-up">
+                            <img class="media-card__img" src="assets/images/sect-finance.jpg" alt="Finance & Banque" loading="lazy">
+                            <span class="media-card__overlay"></span>
+                            <div class="media-card__body">
+                                <h4 data-i18n="sect1_t">Finance & Banque</h4>
+                                <p data-i18n="home_sect1_d">Scoring crédit, fraude mobile money, reporting réglementaire.</p>
+                            </div>
+                        </a>
+                        <a href="services.html#telecom" class="media-card media-card--sm" data-aos="fade-up" data-aos-delay="80">
+                            <img class="media-card__img" src="assets/images/sect-telecom.jpg" alt="Télécommunications" loading="lazy">
+                            <span class="media-card__overlay"></span>
+                            <div class="media-card__body">
+                                <h4 data-i18n="sect2_t">Télécommunications</h4>
+                                <p data-i18n="home_sect2_d">Churn prepaid, segmentation, ciblage d’offres.</p>
+                            </div>
+                        </a>
+                        <a href="services.html#agri" class="media-card media-card--sm" data-aos="fade-up" data-aos-delay="160">
+                            <img class="media-card__img" src="assets/images/sect-agri.jpg" alt="Agriculture" loading="lazy">
+                            <span class="media-card__overlay"></span>
+                            <div class="media-card__body">
+                                <h4 data-i18n="sect3_t">Agriculture</h4>
+                                <p data-i18n="home_sect3_d">Volumes cacao et anacarde, logistique, climat.</p>
+                            </div>
+                        </a>
+                        <a href="services.html#sante" class="media-card media-card--sm" data-aos="fade-up">
+                            <img class="media-card__img" src="assets/images/sect-sante.jpg" alt="Santé" loading="lazy">
+                            <span class="media-card__overlay"></span>
+                            <div class="media-card__body">
+                                <h4 data-i18n="sect4_t">Santé</h4>
+                                <p data-i18n="home_sect4_d">Parcours de soins, stocks de médicaments, reporting.</p>
+                            </div>
+                        </a>
+                        <a href="services.html#commerce" class="media-card media-card--sm" data-aos="fade-up" data-aos-delay="80">
+                            <img class="media-card__img" src="assets/images/sect-commerce.jpg" alt="Commerce & Distribution" loading="lazy">
+                            <span class="media-card__overlay"></span>
+                            <div class="media-card__body">
+                                <h4 data-i18n="sect5_t">Commerce & Distribution</h4>
+                                <p data-i18n="home_sect5_d">Prévision de demande, stocks, panier client.</p>
+                            </div>
+                        </a>
+                        <a href="services.html#energie" class="media-card media-card--sm" data-aos="fade-up" data-aos-delay="160">
+                            <img class="media-card__img" src="assets/images/sect-energie.jpg" alt="Énergie & Secteur Public" loading="lazy">
+                            <span class="media-card__overlay"></span>
+                            <div class="media-card__body">
+                                <h4 data-i18n="sect6_t">Énergie & Secteur Public</h4>
+                                <p data-i18n="home_sect6_d">Consommation, services publics, planification.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="text-center mt-4" data-aos="fade-up">
+                        <a href="services.html#secteurs" class="btn btn--secondary"><span data-i18n="home_sect_cta">Explorer les secteurs</span> <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Méthode + différenciation -->
+            <section class="process section bg-white home-section--meth" id="approche">
+                <div class="container">
+                    <div class="home-meth-intro" data-aos="fade-up">
+                        <div class="section__header section__header--left home-meth-intro__header">
+                            <span class="section__subtitle" data-i18n="sec_meth">Notre méthode</span>
+                            <h2 class="section__title" data-i18n="sec_meth_t">Une méthode en cinq étapes</h2>
+                            <p class="section__description section__description--left" data-i18n="home_meth_d">Cinq étapes, du cadrage métier au suivi en production.</p>
+                        </div>
+                        <div class="home__flow" aria-hidden="true">
+                            <span class="home__flow-step" data-i18n="meth1_t">Comprendre</span>
+                            <i class="fas fa-chevron-right"></i>
+                            <span class="home__flow-step" data-i18n="meth2_t">Explorer</span>
+                            <i class="fas fa-chevron-right"></i>
+                            <span class="home__flow-step" data-i18n="meth3_t">Construire</span>
+                            <i class="fas fa-chevron-right"></i>
+                            <span class="home__flow-step" data-i18n="meth4_t">Livrer</span>
+                            <i class="fas fa-chevron-right"></i>
+                            <span class="home__flow-step" data-i18n="meth5_t">Accompagner</span>
+                        </div>
+                    </div>
+                    <div class="split home-meth-split">
+                        <div class="process__content">
+                            <div class="process__steps process__steps--cards process__steps--home">
+                                <article class="process__step process__step--1" data-aos="fade-up">
+                                    <header class="step__head">
+                                        <div class="step__icon" aria-hidden="true"><i class="fas fa-bullseye"></i></div>
+                                        <div class="step__meta">
+                                            <h3 data-i18n="meth1_t">Comprendre</h3>
+                                        </div>
+                                    </header>
+                                    <p data-i18n="home_meth1_d">Cadrage métier, choix des indicateurs.</p>
+                                </article>
+                                <article class="process__step process__step--2" data-aos="fade-up" data-aos-delay="60">
+                                    <header class="step__head">
+                                        <div class="step__icon" aria-hidden="true"><i class="fas fa-magnifying-glass-chart"></i></div>
+                                        <div class="step__meta">
+                                            <h3 data-i18n="meth2_t">Explorer</h3>
+                                        </div>
+                                    </header>
+                                    <p data-i18n="home_meth2_d">Exploration des données, premiers gains.</p>
+                                </article>
+                                <article class="process__step process__step--3" data-aos="fade-up" data-aos-delay="120">
+                                    <header class="step__head">
+                                        <div class="step__icon" aria-hidden="true"><i class="fas fa-code-branch"></i></div>
+                                        <div class="step__meta">
+                                            <h3 data-i18n="meth3_t">Construire</h3>
+                                        </div>
+                                    </header>
+                                    <p data-i18n="home_meth3_d">Développement itératif et validation.</p>
+                                </article>
+                                <article class="process__step process__step--4" data-aos="fade-up" data-aos-delay="180">
+                                    <header class="step__head">
+                                        <div class="step__icon" aria-hidden="true"><i class="fas fa-rocket"></i></div>
+                                        <div class="step__meta">
+                                            <h3 data-i18n="meth4_t">Livrer</h3>
+                                        </div>
+                                    </header>
+                                    <p data-i18n="home_meth4_d">Mise en production et formation.</p>
+                                </article>
+                                <article class="process__step process__step--5 process__step--last" data-aos="fade-up" data-aos-delay="240">
+                                    <header class="step__head">
+                                        <div class="step__icon" aria-hidden="true"><i class="fas fa-arrows-spin"></i></div>
+                                        <div class="step__meta">
+                                            <h3 data-i18n="meth5_t">Accompagner</h3>
+                                        </div>
+                                    </header>
+                                    <p data-i18n="home_meth5_d">Suivi des performances, évolutions.</p>
+                                </article>
+                            </div>
+                            <div class="mt-4" data-aos="fade-up">
+                                <a href="approche.html" class="btn btn--secondary"><span data-i18n="btn_appr">Découvrir notre approche</span> <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <aside class="home-meth-sidebar" data-aos="fade-left">
+                            <div class="diff-panel diff-panel--home">
+                                <div class="diff-panel__header">
+                                    <span class="section__subtitle" data-i18n="approach_diff_sub">Différenciation</span>
+                                    <h3 class="diff-panel__title" data-i18n="diff_t">Ce qui nous différencie</h3>
+                                    <p class="diff-panel__intro" data-i18n="home_diff_intro">Trois engagements de méthode, communs à toutes nos missions.</p>
+                                </div>
+                                <ul class="check-list check-list--cards">
+                                    <li class="diff-item diff-item--metrics">
+                                        <span class="check-list__icon" aria-hidden="true"><i class="fas fa-gauge-high"></i></span>
+                                        <div class="check-list__body">
+                                            <strong data-i18n="diff1_t">Résultats mesurables</strong>
+                                            <span class="check-list__desc" data-i18n="home_diff1_d">Des indicateurs définis avec vous, mesurés après la livraison.</span>
+                                        </div>
+                                    </li>
+                                    <li class="diff-item diff-item--pragmatic">
+                                        <span class="check-list__icon" aria-hidden="true"><i class="fas fa-layer-group"></i></span>
+                                        <div class="check-list__body">
+                                            <strong data-i18n="diff2_t">Approche pragmatique</strong>
+                                            <span class="check-list__desc" data-i18n="home_diff2_d">Nous partons de vos fichiers réels, pas d’un cas d’école.</span>
+                                        </div>
+                                    </li>
+                                    <li class="diff-item diff-item--transfer">
+                                        <span class="check-list__icon" aria-hidden="true"><i class="fas fa-share-nodes"></i></span>
+                                        <div class="check-list__body">
+                                            <strong data-i18n="diff3_t">Transfert de compétences</strong>
+                                            <span class="check-list__desc" data-i18n="home_diff3_d">Vos équipes savent faire tourner ce que nous livrons.</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pourquoi nous -->
+            <section class="compare section home-section--compare">
+                <div class="container">
+                    <div class="section__header" data-aos="fade-up">
+                        <span class="section__subtitle" data-i18n="home_why_sub">Positionnement</span>
+                        <h2 class="section__title" data-i18n="sec_why">Pourquoi Ivoire Tech Solutions ?</h2>
+                        <p class="section__description" data-i18n="home_why_d">L’exigence technique d’un cabinet international, portée par une équipe africaine ancrée dans les réalités du terrain.</p>
+                    </div>
+                    <div class="compare__grid compare__grid--tech">
+                        <div class="compare__card compare__card--them" data-aos="fade-right">
+                            <div class="compare__card-head">
+                                <span class="compare__card-icon" aria-hidden="true"><i class="fas fa-xmark"></i></span>
+                                <h3 data-i18n="why_them">Les autres</h3>
+                            </div>
+                            <ul class="compare-list">
+                                <li><span class="compare-list__icon compare-list__icon--no" aria-hidden="true"><i class="fas fa-times"></i></span><span data-i18n="home_them1">Cabinets internationaux hors budget</span></li>
+                                <li><span class="compare-list__icon compare-list__icon--no" aria-hidden="true"><i class="fas fa-times"></i></span><span data-i18n="home_them2">Freelances sans méthode ni relais</span></li>
+                                <li><span class="compare-list__icon compare-list__icon--no" aria-hidden="true"><i class="fas fa-times"></i></span><span data-i18n="home_them3">ESN généralistes, peu outillées en data</span></li>
+                                <li><span class="compare-list__icon compare-list__icon--no" aria-hidden="true"><i class="fas fa-times"></i></span><span data-i18n="home_them4">Outils génériques plaqués sur vos processus</span></li>
+                                <li><span class="compare-list__icon compare-list__icon--no" aria-hidden="true"><i class="fas fa-times"></i></span><span data-i18n="home_them5">Un livrable, puis plus personne</span></li>
+                            </ul>
+                        </div>
+                        <div class="compare__card compare__card--us" data-aos="fade-left">
+                            <div class="compare__card-head">
+                                <span class="compare__card-icon compare__card-icon--yes" aria-hidden="true"><i class="fas fa-check"></i></span>
+                                <h3 data-i18n="why_us">Ivoire Tech Solutions</h3>
+                            </div>
+                            <ul class="compare-list">
+                                <li><span class="compare-list__icon compare-list__icon--yes" aria-hidden="true"><i class="fas fa-check"></i></span><span data-i18n="home_us1">Niveau international, tarification locale</span></li>
+                                <li><span class="compare-list__icon compare-list__icon--yes" aria-hidden="true"><i class="fas fa-check"></i></span><span data-i18n="home_us2">Cabinet enregistré, jalons contractuels</span></li>
+                                <li><span class="compare-list__icon compare-list__icon--yes" aria-hidden="true"><i class="fas fa-check"></i></span><span data-i18n="home_us3">Spécialistes data, IA et IT</span></li>
+                                <li><span class="compare-list__icon compare-list__icon--yes" aria-hidden="true"><i class="fas fa-check"></i></span><span data-i18n="home_us4">Construit sur vos propres données</span></li>
+                                <li><span class="compare-list__icon compare-list__icon--yes" aria-hidden="true"><i class="fas fa-check"></i></span><span data-i18n="home_us5">Suivi après livraison et formation</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Équipe -->
+            <section class="section bg-white home-section--team" id="collaborateurs">
+                <div class="container">
+                    <div class="home-team-panel" data-aos="fade-up">
+                        <div class="home-team-grid">
+                            <div class="home-team-panel__eyebrow">
+                                <span class="section__subtitle" data-i18n="home_team_sub">L'équipe</span>
+                            </div>
+                            <div class="team__member home-team-panel__side">
+                                <a href="collaborateurs.html#franck-kouassi" class="home-team-founder-link">
+                                    <div class="member__image member__image--home">
+                                        <img src="assets/colaborateurs/photo/photo-franck-antelme-kouassi.jpg" alt="Dr. Franck Antelme KOUASSI" onerror="this.parentElement.innerHTML='<div class=&quot;avatar-fallback&quot;>FK</div>'">
+                                    </div>
+                                </a>
+                                <div class="member__info text-center">
+                                    <h3>Dr. Franck Antelme KOUASSI</h3>
+                                    <p data-i18n="team_role">Fondateur · Lead R&amp;D &amp; Data Science</p>
+                                </div>
+                            </div>
+                            <div class="home-team-panel__body">
+                                <h2 class="section__title home-team-panel__name">Franck Antelme KOUASSI</h2>
+                                <p class="text-muted home-team-teaser" data-i18n="home_team_p">Docteur en statistiques appliquées (INSA Toulouse) et titulaire d’un Master Data Science (Paris-Saclay). Il a fondé Ivoire Tech Solutions pour mettre cette expérience au service des organisations africaines.</p>
+                                <ul class="home-team-highlights">
+                                    <li><span class="home-team-highlight__icon" aria-hidden="true"><i class="fas fa-graduation-cap"></i></span><span data-i18n="team_h1">Doctorat en statistiques appliquées (INSA Toulouse)</span></li>
+                                    <li class="home-team-highlights__contact">
+                                        <span class="home-team-highlight__icon" aria-hidden="true"><i class="fas fa-address-card"></i></span>
+                                        <div class="home-team-contact">
+                                            <a href="https://www.linkedin.com/in/FAKouassi" class="home-team-contact__link" target="_blank" rel="noopener"><i class="fab fa-linkedin-in" aria-hidden="true"></i><span>LinkedIn</span></a>
+                                            <a href="mailto:contact@ivtechsolutions.ci" class="home-team-contact__link"><i class="fas fa-envelope" aria-hidden="true"></i><span>contact@ivtechsolutions.ci</span></a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="home-team-roster">
+                                <div class="home-team-roster__grid">
+                                    <a href="collaborateurs.html#jean-charles-koua" class="home-team-mini home-team-mini--koua" title="Jean-Charles KOUA">
+                                        <span class="home-team-mini__avatar">
+                                            <img src="assets/colaborateurs/photo/photo-jean-charles-koua.jpg" alt="Jean-Charles KOUA" width="64" height="64" decoding="async" onerror="this.parentElement.innerHTML='<span class=&quot;avatar-fallback avatar-fallback--sm&quot;>JK</span>'">
+                                        </span>
+                                        <span class="home-team-mini__name">Jean-Charles KOUA</span>
+                                        <span class="home-team-mini__role" data-i18n="colab_koua_role">Data Analyst Senior · Chef de projet data</span>
+                                    </a>
+                                    <a href="collaborateurs.html#affoue-yao" class="home-team-mini home-team-mini--yao" title="Affoué Marie Josée YAO">
+                                        <span class="home-team-mini__avatar">
+                                            <img src="assets/colaborateurs/photo/photo-affoue-marie-josee-yao.png" alt="Affoué Marie Josée YAO" width="64" height="64" decoding="async" onerror="this.parentElement.innerHTML='<span class=&quot;avatar-fallback avatar-fallback--sm&quot;>AY</span>'">
+                                        </span>
+                                        <span class="home-team-mini__name">Affoué Marie Josée YAO</span>
+                                        <span class="home-team-mini__role" data-i18n="colab_yao_role">Data Analyst · Business Intelligence</span>
+                                    </a>
+                                    <a href="collaborateurs.html#mamadou-djibo" class="home-team-mini home-team-mini--djibo" title="Mamadou DJIBO">
+                                        <span class="home-team-mini__avatar">
+                                            <img src="assets/colaborateurs/photo/photo-Djibo-Mamadou.jpg" alt="Mamadou DJIBO" width="64" height="64" decoding="async" onerror="this.parentElement.innerHTML='<span class=&quot;avatar-fallback avatar-fallback--sm&quot;>MD</span>'">
+                                        </span>
+                                        <span class="home-team-mini__name">Mamadou DJIBO</span>
+                                        <span class="home-team-mini__role" data-i18n="colab_djibo_role">Ingénieur cybersécurité · Systèmes &amp; Réseaux</span>
+                                    </a>
+                                    <a href="collaborateurs.html#anicet-arthur-kouassi" class="home-team-mini home-team-mini--arthur" title="Anicet Arthur KOUASSI">
+                                        <span class="home-team-mini__avatar">
+                                            <img src="assets/colaborateurs/photo/Photo-KOUASSI-Anicet-Arthur.jpg" alt="Anicet Arthur KOUASSI" width="64" height="64" decoding="async" onerror="this.parentElement.innerHTML='<span class=&quot;avatar-fallback avatar-fallback--sm&quot;>AK</span>'">
+                                        </span>
+                                        <span class="home-team-mini__name">Anicet Arthur KOUASSI</span>
+                                        <span class="home-team-mini__role" data-i18n="colab_arthur_role">Data Scientist · Data Analyst</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="home-team-panel__actions">
+                                <a href="collaborateurs.html" class="btn btn--secondary"><span data-i18n="btn_team">Rencontrer l'équipe</span> <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA final -->
+            <section class="section bg-light home-section--cta">
+                <div class="container">
+                    <div class="page-cta home-page-cta" data-aos="fade-up">
+                        <h2 data-i18n="cta_t">Vous avez des données. Que voulez-vous en faire ?</h2>
+                        <p data-i18n="home_cta_d">Un premier diagnostic gratuit pour situer votre maturité data et identifier vos priorités. Sans engagement.</p>
+                        <a href="contact.html" class="btn btn--primary"><span data-i18n="cta_btn">Demander mon diagnostic gratuit</span> <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__about" data-aos="fade-up">
+                    <a href="index.html" class="footer__logo"><img src="assets/images/IvTech-Logo-Horizontal-FondSombre.svg" alt="Ivoire Tech Solutions"></a>
+                    <p data-i18n="ft_desc">Cabinet de conseil en data science, intelligence artificielle et solutions IT, basé à Abidjan et actif auprès des entreprises et institutions africaines.</p>
+                    <div class="footer__social">
+                        <a href="https://linkedin.com/company/ivtech-solutions" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:contact@ivtechsolutions.ci" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="footer__links" data-aos="fade-up" data-aos-delay="80">
+                    <h3 class="footer__title" data-i18n="ft_links">Navigation</h3>
+                    <ul class="footer__list">
+                        <li><a href="index.html" data-i18n="nav_home">Accueil</a></li>
+                        <li><a href="a-propos.html" data-i18n="nav_about">À propos</a></li>
+                        <li><a href="services.html" data-i18n="nav_services">Services</a></li>
+                        <li><a href="approche.html" data-i18n="nav_approach">Notre Approche</a></li>
+                        <li><a href="collaborateurs.html" data-i18n="nav_team">Collaborateurs</a></li>
+                    </ul>
+                </div>
+                <div class="footer__services" data-aos="fade-up" data-aos-delay="160">
+                    <h3 class="footer__title" data-i18n="ft_srv">Nos services</h3>
+                    <ul class="footer__list">
+                        <li><a href="services.html#data-science" data-i18n="srv1_t">Consulting Data Science</a></li>
+                        <li><a href="services.html#ia" data-i18n="srv2_t">Intelligence Artificielle</a></li>
+                        <li><a href="services.html#it" data-i18n="srv3_t">Solutions IT sur Mesure</a></li>
+                        <li><a href="services.html#cybersecurite" data-i18n="srv5_t">Cybersécurité</a></li>
+                        <li><a href="services.html#formation" data-i18n="srv4_t">Formation & Accompagnement</a></li>
+                    </ul>
+                </div>
+                <div class="footer__contact" data-aos="fade-up" data-aos-delay="240">
+                    <h3 class="footer__title" data-i18n="ft_contact">Contact</h3>
+                    <div class="footer__contact-item"><i class="fas fa-map-marker-alt"></i><span data-i18n="cont_addr_v">Cocody 2 Plateau (près du ONEP), Abidjan, Côte d'Ivoire</span></div>
+                    <div class="footer__contact-item"><i class="fas fa-envelope"></i><a href="mailto:contact@ivtechsolutions.ci">contact@ivtechsolutions.ci</a></div>
+                    <div class="footer__contact-item"><i class="fas fa-globe"></i><span>www.ivtechsolutions.ci</span></div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__copyright">
+                    <span data-i18n="ft_copy">Ivoire Tech Solutions SARL — Capital social : 1 000 000 FCFA — Siège social : Abidjan, Côte d'Ivoire.</span>
+                    &copy; 2026 <span data-i18n="ft_rights">Tous droits réservés.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="scrollup" id="scroll-up" aria-label="Retour en haut"><i class="fas fa-arrow-up"></i></a>
+
+    <script src="assets/js/i18n.js?v=20260813a"></script>
+    <script src="assets/js/main.js?v=20260816-motion"></script>
+    <script src="assets/js/hero-animation.js?v=20260816-motion"></script>
+</body>
+</html>

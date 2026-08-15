@@ -1,0 +1,31 @@
+# Système
+.DS_Store
+**/.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Éditeurs / IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.cursor/
+
+# Environnement / secrets (ne jamais committer)
+.env
+.env.*
+*.pem
+*.key
+
+# Logs et caches locaux
+*.log
+npm-debug.log*
+.cache/
+
+# CVs collaborateurs (données personnelles — garder en local uniquement)
+assets/colaborateurs/Cv colab/
+
+# Fichiers temporaires
+*.tmp
+*.bak

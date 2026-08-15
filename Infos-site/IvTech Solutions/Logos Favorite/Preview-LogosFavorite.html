@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IvTech Solutions — Logos Favoris — Preview</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: #F0F2F5;
+      color: #2C3E50;
+      padding: 40px 20px;
+    }
+    h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 2rem;
+      text-align: center;
+      color: #1B3A5C;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      text-align: center;
+      font-size: 0.95rem;
+      color: #666;
+      margin-bottom: 50px;
+    }
+    .section-title {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 1.3rem;
+      color: #1B3A5C;
+      margin: 50px 0 10px;
+      padding-bottom: 8px;
+      border-bottom: 3px solid;
+      border-image: linear-gradient(to right, #FF8C00, #FFFFFF 50%, #009E60) 1;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .section-desc {
+      max-width: 900px;
+      margin: 0 auto 24px;
+      font-size: 0.85rem;
+      color: #888;
+    }
+
+    .grid {
+      display: grid;
+      gap: 30px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .grid-2 { grid-template-columns: 1fr 1fr; }
+    .grid-3 { grid-template-columns: 1fr 1fr 1fr; }
+    .grid-1 { grid-template-columns: 1fr; }
+
+    .card {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      transition: transform 0.2s;
+    }
+    .card:hover { transform: translateY(-3px); box-shadow: 0 8px 30px rgba(0,0,0,0.12); }
+
+    .card-bg-white { background: #FFFFFF; }
+    .card-bg-dark { background: #1B3A5C; }
+    .card-bg-grey { background: #6B7B8D; }
+    .card-bg-orange { background: #FF8C00; }
+    .card-bg-checker {
+      background-image:
+        linear-gradient(45deg, #ccc 25%, transparent 25%),
+        linear-gradient(-45deg, #ccc 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #ccc 75%),
+        linear-gradient(-45deg, transparent 75%, #ccc 75%);
+      background-size: 16px 16px;
+      background-position: 0 0, 0 8px, 8px -8px, -8px 0;
+    }
+
+    .card-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 30px;
+      min-height: 180px;
+    }
+    .card-content img {
+      max-width: 100%;
+      height: auto;
+    }
+    .card-content.tall { min-height: 320px; }
+    .card-content.small { min-height: 120px; padding: 20px; }
+
+    .card-label {
+      padding: 10px 16px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      background: #F7F8FA;
+      color: #555;
+      border-top: 1px solid #EEE;
+    }
+    .card-bg-dark + .card-label,
+    .card-bg-grey + .card-label,
+    .card-bg-orange + .card-label {
+      background: #F0F2F5;
+    }
+
+    .palette {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 900px;
+      margin: 20px auto 40px;
+    }
+    .swatch {
+      width: 80px;
+      text-align: center;
+    }
+    .swatch-circle {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin: 0 auto 8px;
+      border: 2px solid rgba(0,0,0,0.08);
+    }
+    .swatch-label {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 600;
+      color: #555;
+    }
+    .swatch-hex {
+      font-size: 0.6rem;
+      color: #999;
+      font-family: monospace;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 60px;
+      padding-top: 30px;
+      border-top: 1px solid #DDD;
+      font-size: 0.8rem;
+      color: #999;
+    }
+
+    @media (max-width: 700px) {
+      .grid-2, .grid-3 { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>IvTech Solutions</h1>
+  <p class="subtitle">Tricolor Shield &mdash; Logo Final &mdash; Toutes variantes</p>
+
+  <!-- PALETTE -->
+  <div class="palette">
+    <div class="swatch">
+      <div class="swatch-circle" style="background:#FF8C00;"></div>
+      <div class="swatch-label">Orange CI</div>
+      <div class="swatch-hex">#FF8C00</div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-circle" style="background:#FFFFFF; border-color:#CCC;"></div>
+      <div class="swatch-label">Blanc</div>
+      <div class="swatch-hex">#FFFFFF</div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-circle" style="background:#009E60;"></div>
+      <div class="swatch-label">Vert CI</div>
+      <div class="swatch-hex">#009E60</div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-circle" style="background:#1B3A5C;"></div>
+      <div class="swatch-label">Bleu Profond</div>
+      <div class="swatch-hex">#1B3A5C</div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-circle" style="background:#2E86DE;"></div>
+      <div class="swatch-label">Bleu Vif</div>
+      <div class="swatch-hex">#2E86DE</div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-circle" style="background:#2C3E50;"></div>
+      <div class="swatch-label">Gris Anthracite</div>
+      <div class="swatch-hex">#2C3E50</div>
+    </div>
+  </div>
+
+  <!-- 1. HORIZONTAL -->
+  <h2 class="section-title">1. Logo Horizontal &mdash; Version Principale</h2>
+  <p class="section-desc">Usage : site web, en-tete de documents, cartes de visite, signatures email.</p>
+  <div class="grid grid-1">
+    <div class="card">
+      <div class="card-content card-bg-white">
+        <img src="IvTech-Logo-Horizontal-Couleur.svg" alt="Logo Horizontal Couleur sur fond blanc">
+      </div>
+      <div class="card-label">Horizontal Couleur &mdash; Fond Blanc</div>
+    </div>
+  </div>
+
+  <div class="grid grid-1" style="margin-top:20px;">
+    <div class="card">
+      <div class="card-content card-bg-dark">
+        <img src="IvTech-Logo-Horizontal-FondSombre.svg" alt="Logo Horizontal sur fond sombre">
+      </div>
+      <div class="card-label">Horizontal Couleur &mdash; Fond Sombre</div>
+    </div>
+  </div>
+
+  <!-- 2. VERTICAL -->
+  <h2 class="section-title">2. Logo Vertical / Empile</h2>
+  <p class="section-desc">Usage : presentations, profil reseaux sociaux, roll-up, supports carres.</p>
+  <div class="grid grid-2">
+    <div class="card">
+      <div class="card-content tall card-bg-white">
+        <img src="IvTech-Logo-Vertical-Couleur.svg" alt="Logo Vertical Couleur sur fond blanc">
+      </div>
+      <div class="card-label">Vertical Couleur &mdash; Fond Blanc</div>
+    </div>
+    <div class="card">
+      <div class="card-content tall card-bg-dark">
+        <img src="IvTech-Logo-Vertical-Couleur.svg" alt="Logo Vertical Couleur sur fond sombre" style="filter: brightness(1.6);">
+      </div>
+      <div class="card-label">Vertical &mdash; Fond Sombre (apercu)</div>
+    </div>
+  </div>
+
+  <!-- 3. SYMBOLE -->
+  <h2 class="section-title">3. Symbole Seul</h2>
+  <p class="section-desc">Usage : icone d'application, filigrane, element decoratif, avatar professionnel.</p>
+  <div class="grid grid-3">
+    <div class="card">
+      <div class="card-content small card-bg-white">
+        <img src="IvTech-Logo-Symbole-Couleur.svg" alt="Symbole couleur fond blanc" style="max-height:140px;">
+      </div>
+      <div class="card-label">Symbole &mdash; Fond Blanc</div>
+    </div>
+    <div class="card">
+      <div class="card-content small card-bg-dark">
+        <img src="IvTech-Logo-Symbole-Couleur.svg" alt="Symbole couleur fond sombre" style="max-height:140px;">
+      </div>
+      <div class="card-label">Symbole &mdash; Fond Sombre</div>
+    </div>
+    <div class="card">
+      <div class="card-content small card-bg-grey">
+        <img src="IvTech-Logo-Symbole-Couleur.svg" alt="Symbole couleur fond gris" style="max-height:140px;">
+      </div>
+      <div class="card-label">Symbole &mdash; Fond Gris</div>
+    </div>
+  </div>
+
+  <!-- 4. MONOCHROME -->
+  <h2 class="section-title">4. Versions Monochromes</h2>
+  <p class="section-desc">Usage : impression N&B, tampon, gravure, fax, broderie, fond colore.</p>
+  <div class="grid grid-2">
+    <div class="card">
+      <div class="card-content card-bg-white">
+        <img src="IvTech-Logo-Monochrome-Noir.svg" alt="Monochrome Noir sur fond blanc">
+      </div>
+      <div class="card-label">Monochrome Noir &mdash; Fond Blanc</div>
+    </div>
+    <div class="card">
+      <div class="card-content card-bg-dark">
+        <img src="IvTech-Logo-Monochrome-Blanc.svg" alt="Monochrome Blanc sur fond sombre">
+      </div>
+      <div class="card-label">Monochrome Blanc &mdash; Fond Sombre</div>
+    </div>
+  </div>
+
+  <div class="grid grid-2" style="margin-top:20px;">
+    <div class="card">
+      <div class="card-content card-bg-orange">
+        <img src="IvTech-Logo-Monochrome-Blanc.svg" alt="Monochrome Blanc sur orange">
+      </div>
+      <div class="card-label">Monochrome Blanc &mdash; Fond Orange CI</div>
+    </div>
+    <div class="card">
+      <div class="card-content" style="background:#009E60;">
+        <img src="IvTech-Logo-Monochrome-Blanc.svg" alt="Monochrome Blanc sur vert">
+      </div>
+      <div class="card-label">Monochrome Blanc &mdash; Fond Vert CI</div>
+    </div>
+  </div>
+
+  <!-- 5. FAVICON -->
+  <h2 class="section-title">5. Favicon</h2>
+  <p class="section-desc">Usage : onglet navigateur, icone raccourci, favicon.ico (32x32 / 64x64).</p>
+  <div class="grid grid-3">
+    <div class="card">
+      <div class="card-content small card-bg-white" style="min-height:100px;">
+        <img src="IvTech-Logo-Favicon.svg" alt="Favicon fond blanc" style="width:64px; height:64px;">
+      </div>
+      <div class="card-label">Favicon 64px &mdash; Blanc</div>
+    </div>
+    <div class="card">
+      <div class="card-content small card-bg-dark" style="min-height:100px;">
+        <img src="IvTech-Logo-Favicon.svg" alt="Favicon fond sombre" style="width:64px; height:64px;">
+      </div>
+      <div class="card-label">Favicon 64px &mdash; Sombre</div>
+    </div>
+    <div class="card">
+      <div class="card-content small card-bg-white" style="min-height:100px;">
+        <img src="IvTech-Logo-Favicon.svg" alt="Favicon 32px" style="width:32px; height:32px;">
+        <span style="margin-left:16px;">
+          <img src="IvTech-Logo-Favicon.svg" alt="Favicon 16px" style="width:16px; height:16px;">
+        </span>
+      </div>
+      <div class="card-label">Favicon 32px + 16px</div>
+    </div>
+  </div>
+
+  <!-- 6. COMPARAISON TAILLES -->
+  <h2 class="section-title">6. Test de Tailles</h2>
+  <p class="section-desc">Verification de la lisibilite a differentes echelles.</p>
+  <div class="grid grid-1">
+    <div class="card">
+      <div class="card-content card-bg-white" style="flex-direction:column; gap:20px; align-items:flex-start; padding:40px;">
+        <img src="IvTech-Logo-Horizontal-Couleur.svg" alt="100%" style="width:100%;">
+        <img src="IvTech-Logo-Horizontal-Couleur.svg" alt="75%" style="width:75%;">
+        <img src="IvTech-Logo-Horizontal-Couleur.svg" alt="50%" style="width:50%;">
+        <img src="IvTech-Logo-Horizontal-Couleur.svg" alt="25%" style="width:25%;">
+      </div>
+      <div class="card-label">Horizontal Couleur &mdash; 100% / 75% / 50% / 25%</div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <p><strong>IvTech Solutions</strong> &mdash; Tricolor Shield &mdash; 7 variantes SVG</p>
+    <p style="margin-top:4px;">Fichiers : Horizontal Couleur &bull; Horizontal Fond Sombre &bull; Vertical Couleur &bull; Symbole Couleur &bull; Monochrome Noir &bull; Monochrome Blanc &bull; Favicon</p>
+  </div>
+
+</body>
+</html>
