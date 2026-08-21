@@ -18,7 +18,7 @@
 - [ ] Numéro de téléphone à afficher (+225 …)
 - [ ] RCCM à compléter dans les pages légales
 - [ ] LinkedIn Affoué Yao (si souhaité)
-- [ ] Domaine personnalisé `www.ivtechsolutions.ci` pointé vers Netlify
+- [x] Domaine personnalisé `ivoiretech-solutions.com` pointé vers Netlify
 - [ ] Études de cas / réalisations clients (quand disponibles)
 - [ ] Harmoniser la section équipe de la page d'accueil avec la page Collaborateurs
 

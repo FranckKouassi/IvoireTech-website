@@ -13,7 +13,7 @@ Le projet est déjà configuré pour Netlify (`netlify.toml` à la racine).
    - **Build command** : *(laisser vide)*
    - **Publish directory** : `.` (racine)
 5. Déployez. Netlify attribue une URL du type `https://xxx.netlify.app`.
-6. Domaine personnalisé (optionnel) : **Domain settings → Add custom domain** → `www.ivtechsolutions.ci`.
+6. Domaine personnalisé : **Domain settings → Add custom domain** → `ivoiretech-solutions.com` (et redirection `www` si besoin).
 
 ### Formulaire de contact (Netlify Forms)
 
@@ -49,7 +49,7 @@ Uploadez tout le contenu du dossier (sauf `.git`, `.gitignore`, fichiers de dev)
 
 ## Checklist avant mise en production
 
-- [ ] URLs canoniques cohérentes (`ivtech-solutions.netlify.app` ou domaine final)
+- [x] URLs canoniques cohérentes (`https://ivoiretech-solutions.com`)
 - [ ] Formulaire de contact branché et testé
 - [ ] `sitemap.xml` et `robots.txt` à jour
 - [ ] Photos collaborateurs présentes (`assets/colaborateurs/photo/`)

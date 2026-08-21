@@ -2,7 +2,7 @@
 
 Site vitrine officiel d'**Ivoire Tech Solutions SARL**, cabinet de conseil en data science, intelligence artificielle et solutions IT, basé à Abidjan (Côte d'Ivoire).
 
-**Site en ligne (preview)** : [ivtech-solutions.netlify.app](https://ivtech-solutions.netlify.app)
+**Site en ligne** : [ivoiretech-solutions.com](https://ivoiretech-solutions.com)
 
 ---
 
