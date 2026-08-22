@@ -63,8 +63,7 @@ Site vitrine officiel d'**Ivoire Tech Solutions SARL**, cabinet de conseil en da
 ├── Infos-site/                # Charte graphique / logos source
 ├── sitemap.xml
 ├── robots.txt
-├── netlify.toml               # Config déploiement Netlify
-├── DEPLOYMENT.md              # Guide mise en ligne
+├── DEPLOYMENT.md              # Guide mise en ligne (Cloudflare Workers)
 ├── LICENSE
 └── TODO.md
 ```
@@ -123,31 +122,18 @@ Fichier unique : `assets/css/style.css`. Blocs dédiés par page :
 
 ## Publier sur GitHub
 
-### 1. Initialiser le dépôt (première fois)
+Dépôt : **[IvoireTech-Solutions/IvoireTech-website](https://github.com/IvoireTech-Solutions/IvoireTech-website)** (private, branche `main`).
 
 ```bash
-cd Cabinet-IvTech-Solutions-main
+cd "/Users/franck.kouassi/Documents/Perso/IvTech Solutions/Cabinet-IvTech-Solutions-main"
 
-git init
 git add .
 git status   # vérifier qu'aucun CV PDF n'est listé
-git commit -m "Initial commit — site vitrine Ivoire Tech Solutions"
+git commit -m "Description du changement"
+git push origin main
 ```
 
-### 2. Créer le dépôt sur GitHub
-
-1. [github.com/new](https://github.com/new)
-2. Nom suggéré : `ivtech-solutions-website` ou `Cabinet-IvTech-Solutions`
-3. **Ne pas** cocher README / .gitignore (déjà présents localement)
-4. Visibilité : **Private** recommandé si vous hébergez des infos internes
-
-### 3. Pousser le code
-
-```bash
-git branch -M main
-git remote add origin https://github.com/VOTRE-ORG/ivtech-solutions-website.git
-git push -u origin main
-```
+Chaque push sur `main` déclenche le déploiement automatique sur **Cloudflare Workers** → [ivoiretech-solutions.com](https://ivoiretech-solutions.com).
 
 ### Fichiers exclus automatiquement (`.gitignore`)
 
@@ -159,9 +145,9 @@ git push -u origin main
 
 ## Déploiement
 
-Voir **[DEPLOYMENT.md](./DEPLOYMENT.md)** pour Netlify, GitHub Pages ou hébergement FTP.
+Hébergement : **Cloudflare Workers** (static assets), domaine **[ivoiretech-solutions.com](https://ivoiretech-solutions.com)**.
 
-Configuration Netlify incluse : pas de commande de build, publication à la racine.
+Voir **[DEPLOYMENT.md](./DEPLOYMENT.md)** pour le workflow complet (push GitHub → déploiement auto, DNS, e-mails Google Workspace).
 
 ---
 

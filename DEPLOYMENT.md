@@ -1,57 +1,100 @@
 # Déploiement — Ivoire Tech Solutions
 
-Guide rapide pour mettre le site en ligne après publication sur GitHub.
+Guide de mise en ligne et de maintenance du site vitrine.
 
-## Option 1 : Netlify (recommandé)
+## Hébergement actuel : Cloudflare Workers (Static Assets)
 
-Le projet est déjà configuré pour Netlify (`netlify.toml` à la racine).
+| Élément | Valeur |
+|---------|--------|
+| Projet Cloudflare | `ivoiretech-website` |
+| URL de test | `ivoiretech-website.kfranckkevin.workers.dev` |
+| Domaine production | [ivoiretech-solutions.com](https://ivoiretech-solutions.com) |
+| Domaine défensif | `ivoire-tech-solutions.com` → redirect 301 vers le principal |
+| Dépôt GitHub | [IvoireTech-Solutions/IvoireTech-website](https://github.com/IvoireTech-Solutions/IvoireTech-website) (private) |
+| Branche | `main` |
+| Déploiement | Automatique à chaque `git push` sur `main` |
 
-1. Créez un compte sur [netlify.com](https://www.netlify.com).
-2. **Add new site → Import an existing project → GitHub**.
-3. Sélectionnez le dépôt `Cabinet-IvTech-Solutions`.
-4. Paramètres de build :
-   - **Build command** : *(laisser vide)*
-   - **Publish directory** : `.` (racine)
-5. Déployez. Netlify attribue une URL du type `https://xxx.netlify.app`.
-6. Domaine personnalisé : **Domain settings → Add custom domain** → `ivoiretech-solutions.com` (et redirection `www` si besoin).
+### Modifier et publier le site
 
-### Formulaire de contact (Netlify Forms)
+```bash
+cd "/Users/franck.kouassi/Documents/Perso/IvTech Solutions/Cabinet-IvTech-Solutions-main"
 
-Dans `contact.html`, ajoutez sur la balise `<form>` :
+# 1. Modifier les fichiers HTML / CSS / JS
+# 2. Vérifier en local (optionnel)
+python3 -m http.server 8000
 
-```html
-<form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="contactForm" novalidate>
-  <input type="hidden" name="form-name" value="contact">
-  <p hidden><label>Ne pas remplir : <input name="bot-field"></label></p>
-  ...
-</form>
+# 3. Commit + push → déploiement Cloudflare automatique
+git add .
+git commit -m "Description du changement"
+git push origin main
 ```
 
-Les soumissions apparaissent dans **Netlify → Forms**. Vous pouvez activer les notifications par e-mail.
+> **Ne pas modifier** les enregistrements DNS mail (MX, SPF, DKIM) lors des changements web sur Cloudflare.
 
 ---
 
-## Option 2 : GitHub Pages
+## DNS & e-mails (Cloudflare + Google Workspace)
 
-1. Sur GitHub : **Settings → Pages**.
-2. **Source** : branche `main`, dossier `/ (root)`.
-3. Le site sera disponible à `https://<username>.github.io/<repo>/`.
+| Type | Nom | Usage |
+|------|-----|-------|
+| MX | `@` | Gmail (`smtp.google.com`) |
+| TXT | `@` | SPF + Google site verification |
+| TXT | `google._domainkey` | DKIM |
+| Workers | custom domain | Site web |
 
-> Mettez à jour les URLs canoniques dans les fichiers HTML (`sitemap.xml`, `robots.txt`, balises `og:url`) si vous changez de domaine.
+| E-mail | Rôle |
+|--------|------|
+| `franck.kouassi@ivoiretech-solutions.com` | Compte admin / fondateur |
+| `contact@ivoiretech-solutions.com` | Alias contact (site web) |
 
 ---
 
-## Option 3 : Hébergement classique (cPanel, OVH, etc.)
+## Lancer en local
 
-Uploadez tout le contenu du dossier (sauf `.git`, `.gitignore`, fichiers de dev) via FTP/SFTP à la racine du domaine.
+```bash
+python3 -m http.server 8000
+```
+
+Ouvrir [http://localhost:8000](http://localhost:8000).
+
+---
+
+## Formulaire de contact
+
+Le formulaire ouvre le client mail de l'utilisateur avec un message pré-rempli vers `contact@ivoiretech-solutions.com`.
+
+Pour un envoi **sans ouvrir le client mail** (recommandé à terme), options compatibles Cloudflare Workers :
+
+- **[Formspree](https://formspree.io)** — gratuit jusqu'à 50 envois/mois
+- **[Web3Forms](https://web3forms.com)** — gratuit, clé API simple
+- **Cloudflare Worker custom** — endpoint POST + envoi via API Gmail/SendGrid
+
+---
+
+## Anciennes options (non utilisées)
+
+<details>
+<summary>Netlify — abandonné (repo private = plan payant)</summary>
+
+Le fichier `netlify.toml` est conservé à titre historique mais n'est plus utilisé.
+</details>
+
+<details>
+<summary>GitHub Pages / FTP</summary>
+
+Toujours possibles en upload manuel, mais le workflow Cloudflare + GitHub est préféré.
+</details>
 
 ---
 
 ## Checklist avant mise en production
 
 - [x] URLs canoniques cohérentes (`https://ivoiretech-solutions.com`)
-- [ ] Formulaire de contact branché et testé
-- [ ] `sitemap.xml` et `robots.txt` à jour
-- [ ] Photos collaborateurs présentes (`assets/colaborateurs/photo/`)
-- [ ] Hard refresh testé sur mobile et desktop
-- [ ] Aucun fichier `.env` ou CV PDF dans le dépôt public
+- [x] Domaine production actif
+- [x] E-mails pro configurés (Google Workspace)
+- [x] Redirect 301 `ivoire-tech-solutions.com` → domaine principal
+- [ ] Formulaire contact testé (client mail ou service tiers)
+- [x] `sitemap.xml` et `robots.txt` à jour
+- [ ] Soumettre le sitemap dans Google Search Console
+- [ ] Photos collaborateurs complètes
+- [ ] Hard refresh testé mobile + desktop

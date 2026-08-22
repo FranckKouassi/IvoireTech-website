@@ -9,21 +9,24 @@
 - [x] Page Collaborateurs : 5 profils unifiés
 - [x] SEO : Open Graph, Twitter, JSON-LD, sitemap, robots.txt
 - [x] Responsive + accessibilité de base
-- [x] Fichiers GitHub : README, .gitignore, netlify.toml, DEPLOYMENT.md
+- [x] Domaine & e-mails pro : `ivoiretech-solutions.com`, `contact@ivoiretech-solutions.com`
+- [x] Hébergement Cloudflare Workers + déploiement auto via GitHub (`main`)
+- [x] Redirect 301 `ivoire-tech-solutions.com` → domaine principal
+- [x] Google Workspace (Gmail pro)
 
 ## À faire / à fournir
 
-- [ ] Brancher le formulaire de contact (Netlify Forms ou Formspree) — voir `DEPLOYMENT.md`
+- [ ] Formulaire contact sans client mail (Formspree ou Web3Forms) — voir `DEPLOYMENT.md`
 - [ ] Photo Jean-Charles Koua (`assets/colaborateurs/photo/photo-jean-charles-koua.jpg`)
 - [ ] Numéro de téléphone à afficher (+225 …)
 - [ ] RCCM à compléter dans les pages légales
 - [ ] LinkedIn Affoué Yao (si souhaité)
-- [x] Domaine personnalisé `ivoiretech-solutions.com` pointé vers Netlify
+- [ ] Soumettre `sitemap.xml` dans Google Search Console
 - [ ] Études de cas / réalisations clients (quand disponibles)
 - [ ] Harmoniser la section équipe de la page d'accueil avec la page Collaborateurs
 
 ## Notes dépôt GitHub
 
 - Les **CV PDF** restent en local (`assets/colaborateurs/Cv colab/`) — exclus par `.gitignore`
-- Dépôt **privé** recommandé si le repo contient des e-mails personnels de collaborateurs
-- Après push : connecter Netlify au dépôt pour déploiement automatique
+- Dépôt **privé** : `github.com/IvoireTech-Solutions/IvoireTech-website`
+- **Push sur `main`** → déploiement automatique Cloudflare Workers

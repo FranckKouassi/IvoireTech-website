@@ -292,7 +292,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    /* ===== Formulaire de contact ===== */
+    /* ===== Formulaire de contact (mailto → contact@ivoiretech-solutions.com) ===== */
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         const statusEl = document.getElementById('form-status');
@@ -303,8 +303,21 @@ document.addEventListener('DOMContentLoaded', function () {
                 return;
             }
             const lang = localStorage.getItem('selectedLang') || 'fr';
+            const name = (this.querySelector('#name') || {}).value || '';
+            const email = (this.querySelector('#email') || {}).value || '';
+            const company = (this.querySelector('#company') || {}).value || '';
+            const subject = (this.querySelector('#subject') || {}).value || '';
+            const message = (this.querySelector('#message') || {}).value || '';
+            const mailSubject = encodeURIComponent('[Site web] ' + subject);
+            const mailBody = encodeURIComponent(
+                'Nom : ' + name + '\n' +
+                'Email : ' + email + '\n' +
+                (company ? 'Entreprise : ' + company + '\n' : '') +
+                '\n' + message
+            );
+            window.location.href = 'mailto:contact@ivoiretech-solutions.com?subject=' + mailSubject + '&body=' + mailBody;
             const msg = (window.translations && window.translations[lang] && window.translations[lang].form_success)
-                || 'Votre message a bien été envoyé ! Nous vous recontactons rapidement.';
+                || 'Votre client mail va s\'ouvrir pour envoyer le message.';
             const btn = this.querySelector('button[type="submit"]');
             if (statusEl) {
                 statusEl.textContent = msg;

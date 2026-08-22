@@ -247,7 +247,7 @@ const translations = {
         contact_trust1: "Réponse sous 48h",
         contact_trust2: "Diagnostic gratuit",
         contact_trust3: "Sans engagement",
-        form_success: "Votre message a bien été envoyé ! Nous vous recontactons rapidement.",
+        form_success: "Votre client mail va s'ouvrir — envoyez le message pour nous contacter.",
 
         /* ===== Footer ===== */
         ft_desc: "Cabinet de conseil en data science, intelligence artificielle, solutions IT et cybersécurité, basé à Abidjan et actif auprès des entreprises et institutions africaines.",
@@ -584,7 +584,7 @@ const translations = {
         contact_trust1: "Response within 48h",
         contact_trust2: "Free diagnostic",
         contact_trust3: "No commitment",
-        form_success: "Your message has been sent! We'll get back to you shortly.",
+        form_success: "Your email client will open — send the message to contact us.",
 
         /* ===== Footer ===== */
         ft_desc: "A consulting firm in data science, artificial intelligence, IT solutions and cybersecurity, based in Abidjan and working with African companies and institutions.",
