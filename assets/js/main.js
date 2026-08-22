@@ -292,17 +292,22 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    /* ===== Formulaire de contact (mailto → contact@ivoiretech-solutions.com) ===== */
+    /* ===== Formulaire de contact (mailto protégé + anti-bot) ===== */
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         const statusEl = document.getElementById('form-status');
         contactForm.addEventListener('submit', function (e) {
             e.preventDefault();
+            if (window.IvoireTechSecurity && window.IvoireTechSecurity.isBotSubmission(this)) {
+                return;
+            }
             if (!this.checkValidity()) {
                 this.reportValidity();
                 return;
             }
             const lang = localStorage.getItem('selectedLang') || 'fr';
+            const contactEmail = (window.IvoireTechSecurity && window.IvoireTechSecurity.getContactEmail())
+                || 'contact@ivoiretech-solutions.com';
             const name = (this.querySelector('#name') || {}).value || '';
             const email = (this.querySelector('#email') || {}).value || '';
             const company = (this.querySelector('#company') || {}).value || '';
@@ -315,7 +320,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 (company ? 'Entreprise : ' + company + '\n' : '') +
                 '\n' + message
             );
-            window.location.href = 'mailto:contact@ivoiretech-solutions.com?subject=' + mailSubject + '&body=' + mailBody;
+            window.location.href = 'mailto:' + contactEmail + '?subject=' + mailSubject + '&body=' + mailBody;
             const msg = (window.translations && window.translations[lang] && window.translations[lang].form_success)
                 || 'Votre client mail va s\'ouvrir pour envoyer le message.';
             const btn = this.querySelector('button[type="submit"]');

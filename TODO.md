@@ -13,9 +13,11 @@
 - [x] Hébergement Cloudflare Workers + déploiement auto via GitHub (`main`)
 - [x] Redirect 301 `ivoire-tech-solutions.com` → domaine principal
 - [x] Google Workspace (Gmail pro)
+- [x] Protections sécurité : en-têtes HTTP, obfuscation e-mails, anti-bot formulaire — voir `SECURITY.md`
 
 ## À faire / à fournir
 
+- [ ] Activer Bot Fight Mode + DMARC dans Cloudflare — voir `SECURITY.md`
 - [ ] Formulaire contact sans client mail (Formspree ou Web3Forms) — voir `DEPLOYMENT.md`
 - [ ] Photo Jean-Charles Koua (`assets/colaborateurs/photo/photo-jean-charles-koua.jpg`)
 - [ ] Numéro de téléphone à afficher (+225 …)

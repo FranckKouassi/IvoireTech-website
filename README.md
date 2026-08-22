@@ -155,6 +155,8 @@ Voir **[DEPLOYMENT.md](./DEPLOYMENT.md)** pour le workflow complet (push GitHub 
 
 Consultez [TODO.md](./TODO.md) pour la liste des éléments restants (formulaire contact, RCCM, photo Jean-Charles, etc.).
 
+Sécurité : **[SECURITY.md](./SECURITY.md)** — en-têtes HTTP, anti-scraping e-mails, checklist Cloudflare + DMARC.
+
 ---
 
 ## Licence

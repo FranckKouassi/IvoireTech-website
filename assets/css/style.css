@@ -6753,8 +6753,17 @@ textarea.form__control {
     color: rgba(255, 255, 255, 0.9);
 }
 
-/* Filet d'ombre : le texte tient sur n'importe quelle illustration,
-   sans avoir à assombrir les visuels déjà sombres. */
+/* ===== Sécurité formulaire (honeypot anti-bot) ===== */
+.form__hp {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
 .media-card__body h3,
 .media-card__body h4,
 .media-card__body p,
