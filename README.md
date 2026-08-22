@@ -1,8 +1,14 @@
-# Ivoire Tech Solutions — Site vitrine
+# Ivoire Tech Solutions
 
-Site vitrine officiel d'**Ivoire Tech Solutions SARL**, cabinet de conseil en data science, intelligence artificielle et solutions IT, basé à Abidjan (Côte d'Ivoire).
+Cabinet de conseil en data science, intelligence artificielle, solutions IT et cybersécurité, basé à Abidjan, Côte d'Ivoire.
 
-**Site en ligne** : [ivoiretech-solutions.com](https://ivoiretech-solutions.com)
+Nous accompagnons banques, télécoms, agro-industries, santé, distribution et secteur public, du cadrage métier jusqu'à la mise en production.
+
+**Nos expertises** — Consulting Data Science · Intelligence Artificielle · Solutions IT sur mesure · Cybersécurité · Formation & Accompagnement
+
+🌍 [ivoiretech-solutions.com](https://ivoiretech-solutions.com) · ✉️ [contact@ivoiretech-solutions.com](mailto:contact@ivoiretech-solutions.com)
+
+Site vitrine officiel d'**Ivoire Tech Solutions SARL** — dépôt du site web statique (HTML, CSS, JS).
 
 ---
 
