@@ -11,6 +11,18 @@ const translations = {
         nav_approach: "Notre Approche",
         nav_team: "Collaborateurs",
         nav_contact: "Contactez-nous",
+        subnav_data: "Data Science",
+        subnav_ia: "IA",
+        subnav_it: "IT",
+        subnav_cyber: "Cybersécurité",
+        subnav_form: "Formation",
+        subnav_sect: "Secteurs",
+        subnav_data: "Data Science",
+        subnav_ia: "IA",
+        subnav_it: "IT",
+        subnav_cyber: "Cybersécurité",
+        subnav_form: "Formation",
+        subnav_sect: "Secteurs",
 
         /* ===== Hero ===== */
         hero_badge: "Data Science · IA · IT · Cybersécurité",
@@ -349,6 +361,12 @@ const translations = {
         nav_approach: "Our Approach",
         nav_team: "Team",
         nav_contact: "Contact Us",
+        subnav_data: "Data Science",
+        subnav_ia: "AI",
+        subnav_it: "IT",
+        subnav_cyber: "Cybersecurity",
+        subnav_form: "Training",
+        subnav_sect: "Industries",
 
         /* ===== Hero ===== */
         hero_badge: "Data Science · AI · IT · Cybersecurity",
