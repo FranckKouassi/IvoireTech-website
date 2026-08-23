@@ -44,14 +44,8 @@ document.addEventListener('DOMContentLoaded', function () {
             link.toggleAttribute('aria-current', isActive);
         });
     }
-    const $servicesSubnav = document.querySelector('.services-subnav');
-    const SECTOR_SECTION_IDS = new Set(['finance', 'telecom', 'agri', 'sante', 'commerce', 'energie', 'secteurs']);
 
-    const getScrollOffset = () => {
-        const headerH = $header ? $header.offsetHeight : 0;
-        const subnavH = $servicesSubnav ? $servicesSubnav.offsetHeight : 0;
-        return headerH + subnavH + 24;
-    };
+    const getScrollOffset = () => ($header ? $header.offsetHeight : 0) + 20;
 
     const rafThrottle = (fn) => {
         let ticking = false;
@@ -162,69 +156,10 @@ document.addEventListener('DOMContentLoaded', function () {
                     const offset = target.getBoundingClientRect().top + window.pageYOffset - getScrollOffset();
                     window.history.pushState(null, '', '#' + hash);
                     window.scrollTo({ top: offset, behavior: reduceMotion ? 'auto' : 'smooth' });
-                    if ($servicesSubnav) setServicesSubnavActive(hash);
                 }
             }
         });
     });
-
-    function resolveServicesSubnavKey(sectionId) {
-        if (!sectionId) return '';
-        return SECTOR_SECTION_IDS.has(sectionId) ? 'secteurs' : sectionId;
-    }
-
-    function setServicesSubnavActive(sectionId) {
-        if (!$servicesSubnav) return;
-        const activeKey = resolveServicesSubnavKey(sectionId);
-        $servicesSubnav.querySelectorAll('.services-subnav__link').forEach(link => {
-            const linkId = (link.getAttribute('href') || '').slice(1);
-            const isActive = linkId === activeKey;
-            link.classList.toggle('active', isActive);
-            link.toggleAttribute('aria-current', isActive);
-        });
-    }
-
-    function initServicesSubnav() {
-        if (!$servicesSubnav) return;
-
-        const subnavKeys = Array.from($servicesSubnav.querySelectorAll('.services-subnav__link'))
-            .map(link => (link.getAttribute('href') || '').slice(1))
-            .filter(Boolean);
-
-        const trackable = subnavKeys.flatMap(subnavId => {
-            if (subnavId === 'secteurs') {
-                return ['secteurs', 'finance', 'telecom', 'agri', 'sante', 'commerce', 'energie']
-                    .map(id => {
-                        const el = document.getElementById(id);
-                        return el ? { el, subnavId: 'secteurs' } : null;
-                    })
-                    .filter(Boolean);
-            }
-            const el = document.getElementById(subnavId);
-            return el ? [{ el, subnavId }] : [];
-        });
-
-        const onScrollSpy = rafThrottle(() => {
-            const offset = getScrollOffset() + 40;
-            let currentSubnav = subnavKeys[0];
-            trackable.forEach(({ el, subnavId }) => {
-                if (el.getBoundingClientRect().top <= offset) currentSubnav = subnavId;
-            });
-            if (currentSubnav) setServicesSubnavActive(currentSubnav);
-        });
-
-        window.addEventListener('scroll', onScrollSpy, { passive: true });
-        window.addEventListener('hashchange', () => {
-            const hashId = window.location.hash.slice(1);
-            if (hashId) setServicesSubnavActive(hashId);
-        });
-
-        if (window.location.hash) {
-            setServicesSubnavActive(window.location.hash.slice(1));
-        }
-
-        onScrollSpy();
-    }
 
     if (window.location.hash) {
         setTimeout(() => {
@@ -232,12 +167,9 @@ document.addEventListener('DOMContentLoaded', function () {
             if (target) {
                 const offset = target.getBoundingClientRect().top + window.pageYOffset - getScrollOffset();
                 window.scrollTo({ top: offset, behavior: reduceMotion ? 'auto' : 'smooth' });
-                if ($servicesSubnav) setServicesSubnavActive(window.location.hash.slice(1));
             }
         }, 200);
     }
-
-    initServicesSubnav();
 
     /* ===== Révélation au scroll =====
        Le délai passe par une variable CSS (transition-delay) plutôt que par
