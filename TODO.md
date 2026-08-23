@@ -19,7 +19,7 @@
 
 - [ ] Activer Bot Fight Mode + DMARC dans Cloudflare — voir `SECURITY.md`
 - [ ] Formulaire contact sans client mail (Formspree ou Web3Forms) — voir `DEPLOYMENT.md`
-- [ ] Photo Jean-Charles Koua (`assets/colaborateurs/photo/photo-jean-charles-koua.jpg`)
+- [ ] Photo Jean Charles Koua (`assets/colaborateurs/photo/photo-jean-charles-koua.jpg`)
 - [ ] Numéro de téléphone à afficher (+225 …)
 - [ ] RCCM à compléter dans les pages légales
 - [ ] LinkedIn Affoué Yao (si souhaité)

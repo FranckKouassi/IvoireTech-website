@@ -166,10 +166,10 @@ const translations = {
         team_founder_tag: "Fondateur",
         sec_team_sub: "Équipe",
 
-        /* Jean-Charles Koua */
+        /* Jean Charles Koua */
         colab_koua_role: "Data Analyst Senior · Chef de projet data",
         colab_koua_edu: "Master Data Science (santé, assurance & finance) — Paris-Saclay · Master Cryptographie — Paris-Saclay · Licence Mathématiques appliquées",
-        colab_koua_p1: "Jean-Charles Koua est Data Analyst senior, titulaire d’un Master en Data Science appliqué à la santé, l’assurance et la finance (Université Paris-Saclay), d’un Master Cryptographie et Calcul formel (Université Paris-Saclay), et d’une licence en mathématiques appliquées. Il combine une solide formation quantitative avec une expérience terrain en modernisation d’architectures analytiques.",
+        colab_koua_p1: "Jean Charles Koua est Data Analyst senior, titulaire d’un Master en Data Science appliqué à la santé, l’assurance et la finance (Université Paris-Saclay), d’un Master Cryptographie et Calcul formel (Université Paris-Saclay), et d’une licence en mathématiques appliquées. Il combine une solide formation quantitative avec une expérience terrain en modernisation d’architectures analytiques.",
         colab_koua_p2: "Il a la capacité de piloter des migrations vers Databricks, de refondre des modèles Power BI, de renforcer la gouvernance des données et de concevoir des tableaux de bord et des pipelines ETL (Talend, SQL, Python) pour le pilotage marketing.",
         colab_koua_h1: "Master Data Science — santé, assurance & finance (Paris-Saclay)",
         colab_koua_h2: "Master Cryptographie & Calcul formel (Paris-Saclay)",
@@ -503,10 +503,10 @@ const translations = {
         team_founder_tag: "Founder",
         sec_team_sub: "Team",
 
-        /* Jean-Charles Koua */
+        /* Jean Charles Koua */
         colab_koua_role: "Senior Data Analyst · Data Project Lead",
         colab_koua_edu: "Master’s in Data Science (health, insurance & finance) — Paris-Saclay · Master’s in Cryptography — Paris-Saclay · Bachelor’s in Applied Mathematics",
-        colab_koua_p1: "Jean-Charles Koua is a senior data analyst with a Master’s in Data Science applied to health, insurance and finance (Université Paris-Saclay), a Master’s in Cryptography and Formal Computing (Université Paris-Saclay), and a Bachelor’s in Applied Mathematics. He combines strong quantitative training with hands-on experience modernizing analytics architectures.",
+        colab_koua_p1: "Jean Charles Koua is a senior data analyst with a Master’s in Data Science applied to health, insurance and finance (Université Paris-Saclay), a Master’s in Cryptography and Formal Computing (Université Paris-Saclay), and a Bachelor’s in Applied Mathematics. He combines strong quantitative training with hands-on experience modernizing analytics architectures.",
         colab_koua_p2: "He can lead migrations to Databricks, redesign Power BI models, strengthen data governance and build dashboards and ETL pipelines (Talend, SQL, Python) for marketing analytics.",
         colab_koua_h1: "Master’s in Data Science — health, insurance & finance (Paris-Saclay)",
         colab_koua_h2: "Master’s in Cryptography & Formal Computing (Paris-Saclay)",
