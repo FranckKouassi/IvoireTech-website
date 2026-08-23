@@ -137,17 +137,8 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', onScroll, { passive: true });
     onScroll();
 
-    /* ===== Lien actif selon l'URL (avec / sans .html, ex. /services) ===== */
-    $navLinks.forEach(link => {
-        const href = link.getAttribute('href');
-        if (pagesMatch(href, currentPageKey)) {
-            link.classList.add('active');
-            link.setAttribute('aria-current', 'page');
-        } else if (href && !href.startsWith('#')) {
-            link.classList.remove('active');
-            link.removeAttribute('aria-current');
-        }
-    });
+    setActiveNav();
+    window.addEventListener('pageshow', setActiveNav);
 
     /* ===== Bouton retour en haut ===== */
     if ($scrollUp) {
@@ -163,7 +154,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const href = this.getAttribute('href');
             if (!href || href === '#') return;
             const [path, hash] = href.split('#');
-            const samePage = !path || pagesMatch(path, currentPageKey);
+            const samePage = !path || pagesMatch(path, normalizePageKey(window.location.pathname));
             if (samePage && hash) {
                 const target = document.getElementById(hash);
                 if (target) {
@@ -508,3 +499,10 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+/* Filet de sécurité : si une erreur JS bloque les révélations, afficher le contenu quand même */
+setTimeout(function () {
+    if (document.documentElement.classList.contains('no-aos')) return;
+    const stuck = document.querySelector('[data-aos]:not(.aos-animate)');
+    if (stuck) document.documentElement.classList.add('no-aos');
+}, 2500);
