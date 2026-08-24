@@ -231,7 +231,7 @@ const translations = {
         sec_cont_t: "Diagnostic data gratuit",
         sec_cont_d: "Décrivez votre secteur, les données dont vous disposez et ce que vous cherchez à améliorer. Nous répondons sous 48 heures ouvrées et proposons un premier échange de cadrage.",
         cont_addr: "Adresse",
-        cont_addr_v: "Cocody, Adjamé 2 Plateau (près du ONEP), Lot 808, Ilot 87, Abidjan, Côte d'Ivoire",
+        cont_addr_v: "Cocody, 2 Plateau (près du ONEP), Lot 808, Ilot 87, Abidjan",
         cont_rccm: "N° RCCM",
         cont_rccm_v: "CI-ABJ-03-2026-B13-09993",
         cont_phone: "Téléphone",
@@ -257,7 +257,7 @@ const translations = {
         ft_links: "Navigation",
         ft_srv: "Nos services",
         ft_contact: "Contact",
-        ft_copy: "IVTECH SOLUTIONS SARLU — RCCM CI-ABJ-03-2026-B13-09993 — Capital : 1 000 000 FCFA — Siège : Cocody, Adjamé 2 Plateau, Abidjan, Côte d'Ivoire.",
+        ft_copy: "IVTECH SOLUTIONS SARLU — RCCM CI-ABJ-03-2026-B13-09993 — Capital : 1 000 000 FCFA — Siège : Cocody, 2 Plateau, Abidjan.",
         ft_rights: "Tous droits réservés.",
 
         /* ===== Page À propos ===== */
@@ -296,7 +296,7 @@ const translations = {
         info_date: "Immatriculation RCCM",
         info_date_v: "20 août 2026",
         info_hq: "Siège social",
-        info_hq_v: "Cocody, Adjamé 2 Plateau (près du ONEP), Lot 808, Ilot 87, Abidjan, Côte d'Ivoire",
+        info_hq_v: "Cocody, 2 Plateau (près du ONEP), Lot 808, Ilot 87, Abidjan",
         info_sector: "Activités",
         info_sector_v: "Consulting data science, solutions IT & IA, formations, transition numérique",
         info_zone: "Zone d'intervention",
@@ -581,7 +581,7 @@ const translations = {
         sec_cont_t: "Free data diagnostic",
         sec_cont_d: "Describe your sector, the data you have and what you are trying to improve. We reply within 48 business hours and propose a first framing call.",
         cont_addr: "Address",
-        cont_addr_v: "Cocody, Adjamé 2 Plateau (near ONEP), Lot 808, Block 87, Abidjan, Côte d'Ivoire",
+        cont_addr_v: "Cocody, 2 Plateau (near ONEP), Lot 808, Block 87, Abidjan",
         cont_rccm: "Trade register no.",
         cont_rccm_v: "CI-ABJ-03-2026-B13-09993",
         cont_phone: "Phone",
@@ -607,7 +607,7 @@ const translations = {
         ft_links: "Navigation",
         ft_srv: "Our services",
         ft_contact: "Contact",
-        ft_copy: "IVTECH SOLUTIONS SARLU — Trade register CI-ABJ-03-2026-B13-09993 — Share capital: 1,000,000 FCFA — Head office: Cocody, Adjamé 2 Plateau, Abidjan, Côte d'Ivoire.",
+        ft_copy: "IVTECH SOLUTIONS SARLU — Trade register CI-ABJ-03-2026-B13-09993 — Share capital: 1,000,000 FCFA — Head office: Cocody, 2 Plateau, Abidjan.",
         ft_rights: "All rights reserved.",
 
         /* ===== About page ===== */
@@ -646,7 +646,7 @@ const translations = {
         info_date: "Registration date",
         info_date_v: "August 20, 2026",
         info_hq: "Head office",
-        info_hq_v: "Cocody, Adjamé 2 Plateau (near ONEP), Lot 808, Block 87, Abidjan, Côte d'Ivoire",
+        info_hq_v: "Cocody, 2 Plateau (near ONEP), Lot 808, Block 87, Abidjan",
         info_sector: "Activities",
         info_sector_v: "Data science consulting, custom IT & AI solutions, training, digital transition",
         info_zone: "Area of operation",
