@@ -21,7 +21,7 @@
 - [ ] Formulaire contact sans client mail (Formspree ou Web3Forms) — voir `DEPLOYMENT.md`
 - [x] Photo Jean Charles Koua (`assets/colaborateurs/photo/photo-jeancharleskoua.jpg`)
 - [ ] Numéro de téléphone à afficher (+225 …)
-- [ ] RCCM à compléter dans les pages légales
+- [x] RCCM et informations légales (registre de commerce — CI-ABJ-03-2026-B13-09993)
 - [ ] LinkedIn Affoué Yao (retiré du site — contact via page Contact)
 - [ ] Soumettre `sitemap.xml` dans Google Search Console
 - [ ] Études de cas / réalisations clients (quand disponibles)

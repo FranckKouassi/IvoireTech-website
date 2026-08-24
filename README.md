@@ -8,7 +8,7 @@ Nous accompagnons banques, télécoms, agro-industries, santé, distribution et 
 
 🌍 [ivoiretech-solutions.com](https://ivoiretech-solutions.com) · ✉️ [contact@ivoiretech-solutions.com](mailto:contact@ivoiretech-solutions.com)
 
-Site vitrine officiel d'**Ivoire Tech Solutions SARL** — dépôt du site web statique (HTML, CSS, JS).
+Site vitrine officiel d'**IVTECH SOLUTIONS SARLU** (nom commercial : **Ivoire Tech Solutions**) — dépôt du site web statique (HTML, CSS, JS).
 
 ---
 
@@ -169,4 +169,4 @@ Sécurité : **[SECURITY.md](./SECURITY.md)** — en-têtes HTTP, anti-scraping 
 
 Projet sous licence **MIT** — voir [LICENSE](./LICENSE).
 
-© 2026 Ivoire Tech Solutions SARL — Abidjan, Côte d'Ivoire.
+© 2026 IVTECH SOLUTIONS SARLU (Ivoire Tech Solutions) — RCCM CI-ABJ-03-2026-B13-09993 — Abidjan, Côte d'Ivoire.
