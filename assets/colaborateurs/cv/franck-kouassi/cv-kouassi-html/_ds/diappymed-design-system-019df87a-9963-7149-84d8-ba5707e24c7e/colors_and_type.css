@@ -1,0 +1,155 @@
+/* DiappyMed Design Tokens
+   Mobile health app for diabetes management (French market).
+   Source: Figma "UI Design EkiYou V1.0.0".
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&family=Karla:wght@400;500&display=swap');
+
+:root {
+  /* ──────── Brand / Primary ──────── */
+  --dm-teal:           rgb(50, 177, 164);   /* primary brand — buttons, accents, success */
+  --dm-teal-shadow:    rgba(50, 177, 164, 0.3725); /* signature button glow */
+  --dm-teal-soft:      rgb(223, 243, 241);  /* tinted backgrounds, success boxes */
+
+  --dm-deep-teal:      rgb(12, 105, 128);   /* secondary — links, active toggle, focused outline */
+  --dm-purple:         rgb(115, 83, 134);   /* illustration accent */
+  --dm-purple-light:   rgb(130, 101, 147);  /* illustration accent (lighter) */
+  --dm-purple-deep:    rgb(97, 63, 117);    /* graph line on dashboard */
+  --dm-purple-shadow:  rgba(92, 66, 114, 0.9882);
+  --dm-tan:            rgb(153, 115, 77);   /* tertiary illustration accent */
+  --dm-coral:          rgb(226, 133, 110);  /* warning / hyperglycemia accent */
+
+  /* ──────── Neutrals (iOS-aligned greyscale) ──────── */
+  --dm-black:          rgb(0, 0, 0);
+  --dm-ink:            rgb(24, 23, 22);     /* primary text on light bg */
+  --dm-ink-soft:       rgb(44, 44, 46);     /* iOS label */
+  --dm-ink-soft-2:     rgb(42, 44, 47);     /* alt body */
+  --dm-grey-1:         rgb(142, 142, 147);  /* iOS secondary label */
+  --dm-grey-2:         rgb(155, 155, 168);
+  --dm-grey-3:         rgb(174, 174, 178);  /* iOS tertiary label */
+  --dm-grey-4:         rgb(199, 199, 204);  /* iOS opaque separator */
+  --dm-grey-5:         rgb(209, 209, 214);
+  --dm-grey-6:         rgb(217, 217, 217);  /* divider/chip default — most-used neutral */
+  --dm-bg-soft:        rgb(241, 239, 242);  /* card/section background */
+  --dm-bg-soft-alt:    rgb(244, 244, 245);
+  --dm-bg-hairline:    rgb(244, 245, 246);  /* social button bg */
+  --dm-white:          rgb(255, 255, 255);
+
+  /* ──────── Semantic / status ──────── */
+  --dm-success:        rgb(50, 177, 164);   /* same as teal */
+  --dm-success-soft:   rgb(223, 243, 241);
+  --dm-error:          rgb(255, 128, 128);
+  --dm-error-soft:     rgb(253, 234, 234);  /* hypo background tint */
+  --dm-warning-soft:   rgb(253, 224, 205);
+  --dm-warning-peach:  rgb(255, 238, 235);  /* glucose target band */
+  --dm-info:           rgb(37, 116, 255);
+  --dm-info-soft:      rgb(232, 243, 255);
+  --dm-info-stroke:    rgb(139, 198, 253);
+  --dm-violet-chip:    rgb(189, 137, 226);
+
+  /* glucose chart colors */
+  --dm-glucose-low:    rgb(253, 234, 234);
+  --dm-glucose-target: rgb(255, 238, 235);
+  --dm-glucose-high:   rgb(226, 133, 110);
+
+  /* ──────── Surfaces ──────── */
+  --dm-surface:           var(--dm-white);
+  --dm-surface-card:      var(--dm-white);
+  --dm-surface-section:   var(--dm-bg-soft);
+  --dm-surface-status:    rgba(0, 0, 0, 0);
+
+  /* ──────── Foreground ──────── */
+  --fg-1: var(--dm-ink-soft);     /* primary text */
+  --fg-2: var(--dm-grey-1);       /* secondary */
+  --fg-3: var(--dm-grey-3);       /* tertiary / placeholder */
+  --fg-on-brand: var(--dm-white);
+  --fg-link: var(--dm-deep-teal);
+
+  /* ──────── Borders / dividers ──────── */
+  --border-default: var(--dm-grey-4);
+  --border-subtle:  var(--dm-grey-5);
+  --border-strong:  var(--dm-ink-soft);
+  --border-focus:   var(--dm-deep-teal);
+
+  /* ──────── Shadows (extracted from Figma) ──────── */
+  --shadow-card:        0px 3px 3px 0px rgba(0, 0, 0, 0.1608);
+  --shadow-card-soft:   0px 2px 16.5px 0px rgba(155, 155, 155, 0.1608);
+  --shadow-elevated:    0px 20px 40px 0px rgba(0, 0, 0, 0.04);
+  --shadow-button:      0px 3px 22px 0px rgba(50, 177, 164, 0.3725); /* signature */
+  --shadow-pill:        0px 3px 8px 0px rgba(136, 131, 131, 0.16);
+  --shadow-tab:         0px 4px 22px 0px rgba(142, 142, 147, 0.2824);
+  --shadow-purple-glow: 0px 8px 24px 0px rgba(92, 66, 114, 0.25);
+
+  /* ──────── Radii ──────── */
+  --radius-xs: 4px;
+  --radius-sm: 6px;     /* button + small card default */
+  --radius-md: 10px;    /* input fields */
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-pill: 100px;
+  --radius-circle: 50%;
+
+  /* ──────── Spacing scale (4px base) ──────── */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 32px;
+  --space-8: 40px;
+  --space-9: 48px;
+  --space-10: 64px;
+
+  /* ──────── Typography ──────── */
+  --font-display: 'Poppins', system-ui, sans-serif;  /* titles, brand wordmark */
+  --font-body:    'Inter',   system-ui, sans-serif;  /* paragraph/UI/timestamps/numerics */
+  --font-mono:    'Karla',   system-ui, sans-serif;  /* graph value chips */
+
+  /* Weights */
+  --w-regular:  400;
+  --w-medium:   500;
+  --w-semi:     600;
+  --w-bold:     700;
+
+  /* Type scale (px from Figma) */
+  --t-display:  28px;   /* dashboard greeting "Bonjour Noémie !" */
+  --t-h1:       22px;   /* brand wordmark / large title */
+  --t-h2:       20px;   /* section headers */
+  --t-h3:       18px;
+  --t-body:     14px;   /* default paragraph + buttons (Poppins 700/15) */
+  --t-button:   15px;
+  --t-meta:     12px;   /* timestamps, labels, captions */
+  --t-micro:    11px;
+  --t-numeric-xl: 81px; /* hero glucose readings (Poppins Bold) */
+
+  --lh-tight:   1.0;
+  --lh-snug:    1.25;
+  --lh-normal:  1.4;
+  --lh-relaxed: 1.5;
+
+  --letter-tight: -0.01em;
+  --letter-snug:  -0.03em;
+}
+
+/* ──────── Semantic element styles ──────── */
+
+html, body {
+  font-family: var(--font-body);
+  color: var(--fg-1);
+  background: var(--dm-surface);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dm-display { font-family: var(--font-display); font-weight: var(--w-bold); font-size: var(--t-display); line-height: 38px; color: var(--fg-1); }
+.dm-h1      { font-family: var(--font-display); font-weight: var(--w-medium); font-size: var(--t-h1); line-height: 1; color: var(--dm-black); }
+.dm-h2      { font-family: var(--font-display); font-weight: var(--w-semi);   font-size: var(--t-h2); line-height: 28px; color: var(--fg-1); }
+.dm-h3      { font-family: var(--font-display); font-weight: var(--w-semi);   font-size: var(--t-h3); line-height: 24px; color: var(--fg-1); }
+.dm-section-label { font-family: var(--font-display); font-weight: var(--w-medium); font-size: 14px; line-height: 18px; letter-spacing: var(--letter-tight); color: var(--fg-1); }
+.dm-body    { font-family: var(--font-body); font-size: var(--t-body); line-height: 21px; color: var(--fg-1); }
+.dm-meta    { font-family: var(--font-body); font-size: var(--t-meta); line-height: 18px; color: var(--fg-2); }
+.dm-numeric-display { font-family: var(--font-display); font-weight: var(--w-bold); font-size: var(--t-numeric-xl); line-height: 1; letter-spacing: var(--letter-snug); color: var(--fg-1); }
+.dm-chip-numeric { font-family: var(--font-mono); font-size: 14px; line-height: 18px; color: var(--dm-black); }
+.dm-button-label { font-family: var(--font-display); font-weight: var(--w-bold); font-size: var(--t-button); line-height: 20px; letter-spacing: var(--letter-tight); color: var(--fg-on-brand); text-align: center; }
+.dm-link    { color: var(--fg-link); text-decoration: none; font-weight: var(--w-medium); }
