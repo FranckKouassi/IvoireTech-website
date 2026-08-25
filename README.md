@@ -145,7 +145,8 @@ Chaque push sur `main` déclenche le déploiement automatique sur **Cloudflare W
 
 - `.DS_Store`, fichiers éditeur
 - `.env` et secrets
-- **`assets/colaborateurs/Cv colab/`** — CVs PDF (données personnelles)
+- **`assets/colaborateurs/cv/`** — CV public du fondateur (PDF)
+- **`assets/colaborateurs/Cv colab/`** — CVs collaborateurs locaux (exclus par `.gitignore`)
 
 ---
 

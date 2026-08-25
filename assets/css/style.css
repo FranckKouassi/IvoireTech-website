@@ -4573,6 +4573,43 @@ textarea.form__control {
     border-color: var(--profile-accent);
 }
 
+.member__cv-btn,
+.home-team-cv-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.45rem;
+    margin-top: 0.85rem;
+    padding: 0.55rem 0.95rem;
+    border-radius: var(--border-radius-sm);
+    border: 1px solid color-mix(in srgb, var(--primary-color) 22%, var(--gray-200));
+    background: color-mix(in srgb, var(--primary-color) 5%, #fff);
+    color: var(--primary-color);
+    font-size: 0.84rem;
+    font-weight: var(--font-semi-bold);
+    line-height: 1.2;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.member__cv-btn:hover,
+.home-team-cv-btn:hover {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #fff;
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-sm);
+}
+
+.team-page .collab-profile--founder .member__cv-btn {
+    width: 100%;
+    max-width: 15rem;
+}
+
+.home-team-cv-btn {
+    margin-top: 0.65rem;
+}
+
 .team-page .collab-profile__body {
     position: relative;
     z-index: 1;
@@ -5777,7 +5814,14 @@ textarea.form__control {
 }
 
 .home-page .home-team-highlights__contact {
-    align-items: center;
+    align-items: flex-start;
+}
+
+.home-page .home-team-contact-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.15rem;
 }
 
 .home-page .home-team-contact {
