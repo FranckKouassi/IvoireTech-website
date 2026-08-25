@@ -135,7 +135,7 @@ cd "/Users/franck.kouassi/Documents/Perso/IvTech Solutions/Cabinet-IvTech-Soluti
 
 git pull origin main
 
-# Synchroniser le CV HTML local (Cv colab) vers la page en ligne
+# Synchroniser le CV PDF local (Cv colab) vers la page en ligne
 chmod +x scripts/sync-founder-cv.sh
 ./scripts/sync-founder-cv.sh
 
