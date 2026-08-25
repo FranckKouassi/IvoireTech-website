@@ -17,3 +17,14 @@
 
 /robots.txt
   Cache-Control: public, max-age=86400
+
+/assets/colaborateurs/cv/franck-kouassi/*
+  X-Frame-Options: SAMEORIGIN
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data:; connect-src 'self'; frame-ancestors 'self'; base-uri 'self'
+
+/assets/colaborateurs/cv/*.pdf
+  X-Robots-Tag: noindex, nofollow
+  Content-Disposition: inline
+
+/cv-franck-kouassi.html
+  X-Robots-Tag: noindex, nofollow

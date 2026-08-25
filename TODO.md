@@ -19,7 +19,7 @@
 
 - [ ] Activer Bot Fight Mode + DMARC dans Cloudflare — voir `SECURITY.md`
 - [ ] Formulaire contact sans client mail (Formspree ou Web3Forms) — voir `DEPLOYMENT.md`
-- [x] Photo Jean Charles Koua (`assets/colaborateurs/photo/photo-jeancharleskoua.jpg`)
+- [x] CV fondateur consultable en ligne (`cv-franck-kouassi.html` + `scripts/sync-founder-cv.sh`)
 - [ ] Numéro de téléphone à afficher (+225 …)
 - [x] RCCM et informations légales (registre de commerce — CI-ABJ-03-2026-B13-09993)
 - [ ] LinkedIn Affoué Yao (retiré du site — contact via page Contact)

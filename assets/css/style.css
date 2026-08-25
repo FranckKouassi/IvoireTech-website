@@ -6822,3 +6822,90 @@ textarea.form__control {
 .media-card__link {
     text-shadow: 0 1px 14px rgba(5, 16, 26, 0.55);
 }
+
+/* ===== Page CV fondateur (consultation en ligne) ===== */
+.cv-page__main {
+    padding-top: 6.5rem;
+    padding-bottom: 2rem;
+    min-height: calc(100vh - 8rem);
+    background: var(--light-color);
+}
+
+.cv-page__toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.cv-page__back {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    font-weight: var(--font-semi-bold);
+    color: var(--primary-color);
+}
+
+.cv-page__back:hover {
+    color: var(--accent-color);
+}
+
+.cv-page__note {
+    margin: 0;
+    font-size: 0.84rem;
+    color: var(--text-muted);
+}
+
+.cv-page__viewer {
+    background: #fff;
+    border: 1px solid var(--gray-200);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+}
+
+.cv-page__frame {
+    display: block;
+    width: 100%;
+    min-height: calc(100vh - 12rem);
+    border: 0;
+    background: #fff;
+}
+
+.footer--compact {
+    padding-top: 1.25rem;
+}
+
+.footer--compact .footer__bottom {
+    padding-top: 0;
+    border-top: none;
+}
+
+.dark-theme .cv-page__main {
+    background: var(--dark-bg, #0a1c2e);
+}
+
+.dark-theme .cv-page__viewer {
+    background: #0f1b29;
+    border-color: rgba(148, 190, 235, 0.14);
+}
+
+@media (max-width: 768px) {
+    .cv-page__main {
+        padding-top: 5.75rem;
+    }
+
+    .cv-page__frame {
+        min-height: calc(100vh - 10rem);
+    }
+}
+
+@media print {
+    .cv-page .header,
+    .cv-page .footer,
+    .cv-page__toolbar {
+        display: none !important;
+    }
+}

@@ -133,8 +133,14 @@ Dépôt : **[IvoireTech-Solutions/IvoireTech-website](https://github.com/IvoireT
 ```bash
 cd "/Users/franck.kouassi/Documents/Perso/IvTech Solutions/Cabinet-IvTech-Solutions-main"
 
+git pull origin main
+
+# Synchroniser le CV HTML local (Cv colab) vers la page en ligne
+chmod +x scripts/sync-founder-cv.sh
+./scripts/sync-founder-cv.sh
+
 git add .
-git status   # vérifier qu'aucun CV PDF n'est listé
+git status   # vérifier : pas de PDF dans assets/colaborateurs/Cv colab/ ni de *.pdf ajouté
 git commit -m "Description du changement"
 git push origin main
 ```
@@ -145,8 +151,8 @@ Chaque push sur `main` déclenche le déploiement automatique sur **Cloudflare W
 
 - `.DS_Store`, fichiers éditeur
 - `.env` et secrets
-- **`assets/colaborateurs/cv/`** — CV public du fondateur (PDF)
-- **`assets/colaborateurs/Cv colab/`** — CVs collaborateurs locaux (exclus par `.gitignore`)
+- **`assets/colaborateurs/cv/franck-kouassi/`** — CV HTML public du fondateur (généré par `scripts/sync-founder-cv.sh`)
+- **`assets/colaborateurs/Cv colab/`** — source locale du CV (exclus par `.gitignore`)
 
 ---
 

@@ -152,7 +152,9 @@ const translations = {
         /* ===== Équipe ===== */
         sec_team: "Le fondateur",
         team_role: "Fondateur · Lead R&D & Data Science",
-        team_cv_btn: "Consulter le CV complet",
+        team_cv_btn: "Consulter le CV en ligne",
+        cv_back_team: "Retour à l'équipe",
+        cv_view_only: "Consultation en ligne — document non téléchargeable depuis le site.",
         team_edu: "Doctorat en statistiques appliquées — INSA Toulouse · Master Data Science — Université Paris-Saclay",
         team_p1: "Docteur en statistiques appliquées à l’INSA Toulouse et titulaire d’un Master en Data Science à l’Université Paris-Saclay, Franck est aussi issu d’une licence de mathématiques à l’Université Nangui Abrogoua (Abidjan). Il a enseigné et encadré des travaux pratiques en fiabilité des systèmes et analyse de données à l’INSA Toulouse, et mené dès ses débuts des projets de machine learning appliqués.",
         team_p2: "Sur le terrain, il met en place des pipelines ELT, conçoit des modèles de machine learning et de vision par ordinateur, et maîtrise l’écosystème Microsoft Azure de bout en bout. Il conduit les projets en Agile / Scrum (Jira), reste à jour sur les technologies IA et data science actuelles, et met cette expertise académique et opérationnelle au service des entreprises africaines via Ivoire Tech Solutions.",
@@ -503,7 +505,9 @@ const translations = {
         /* ===== Team ===== */
         sec_team: "The founder",
         team_role: "Founder · Lead R&D & Data Science",
-        team_cv_btn: "View full résumé",
+        team_cv_btn: "View CV online",
+        cv_back_team: "Back to team",
+        cv_view_only: "Online viewing only — not downloadable from this site.",
         team_edu: "PhD in Applied Statistics — INSA Toulouse · Master’s in Data Science — Université Paris-Saclay",
         team_p1: "Holding a PhD in Applied Statistics from INSA Toulouse and a Master’s in Data Science from Université Paris-Saclay, Franck also earned a Bachelor’s in Mathematics from Université Nangui Abrogoua (Abidjan). He taught and supervised labs on system reliability and data analysis at INSA Toulouse, and delivered applied machine-learning projects early in his career.",
         team_p2: "In the field, he builds ELT pipelines, designs machine-learning and computer-vision models, and works end-to-end on the Microsoft Azure stack. He leads projects with Agile / Scrum (Jira), stays current on modern AI and data-science technologies, and brings this academic and operational expertise to African organizations through Ivoire Tech Solutions.",
