@@ -136,6 +136,7 @@ cd "/Users/franck.kouassi/Documents/Perso/IvTech Solutions/Cabinet-IvTech-Soluti
 git pull origin main
 
 # Synchroniser le CV PDF local (Cv colab) vers la page en ligne
+# Fichier attendu : assets/colaborateurs/Cv colab/Cv-KOUASSI-Franck-updated.pdf
 chmod +x scripts/sync-founder-cv.sh
 ./scripts/sync-founder-cv.sh
 
@@ -151,7 +152,7 @@ Chaque push sur `main` déclenche le déploiement automatique sur **Cloudflare W
 
 - `.DS_Store`, fichiers éditeur
 - `.env` et secrets
-- **`assets/colaborateurs/cv/franck-kouassi/`** — CV HTML public du fondateur (généré par `scripts/sync-founder-cv.sh`)
+- **`assets/colaborateurs/cv/franck-kouassi-cv.pdf`** — CV PDF public du fondateur (généré par `scripts/sync-founder-cv.sh`)
 - **`assets/colaborateurs/Cv colab/`** — source locale du CV (exclus par `.gitignore`)
 
 ---
