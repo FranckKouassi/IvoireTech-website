@@ -152,7 +152,7 @@ Chaque push sur `main` déclenche le déploiement automatique sur **Cloudflare W
 
 - `.DS_Store`, fichiers éditeur
 - `.env` et secrets
-- **`assets/colaborateurs/cv/franck-kouassi-cv.pdf`** — CV PDF public du fondateur (généré par `scripts/sync-founder-cv.sh`)
+- **`assets/colaborateurs/cv/Cv-KOUASSI-Franck-updated.pdf`** — CV PDF public du fondateur (généré par `scripts/sync-founder-cv.sh`)
 - **`assets/colaborateurs/Cv colab/`** — source locale du CV (exclus par `.gitignore`)
 
 ---

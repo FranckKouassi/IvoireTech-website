@@ -17,7 +17,13 @@
 /robots.txt
   Cache-Control: public, max-age=86400
 
+/assets/colaborateurs/cv/Cv-KOUASSI-Franck-updated.pdf
+  Cache-Control: public, max-age=3600
+  X-Robots-Tag: noindex, nofollow
+  Content-Disposition: inline
+
 /assets/colaborateurs/cv/*.pdf
+  Cache-Control: public, max-age=3600
   X-Robots-Tag: noindex, nofollow
   Content-Disposition: inline
 

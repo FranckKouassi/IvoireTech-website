@@ -5,7 +5,7 @@ set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 SRC="$ROOT/assets/colaborateurs/Cv colab"
-DST="$ROOT/assets/colaborateurs/cv/franck-kouassi-cv.pdf"
+DST="$ROOT/assets/colaborateurs/cv/Cv-KOUASSI-Franck-updated.pdf"
 PREFERRED_NAME="Cv-KOUASSI-Franck-updated.pdf"
 
 if [[ ! -d "$SRC" ]]; then
@@ -38,4 +38,7 @@ fi
 mkdir -p "$(dirname "$DST")"
 cp "$pdf_file" "$DST"
 
-echo "OK — CV synchronisé depuis $(basename "$pdf_file") vers assets/colaborateurs/cv/franck-kouassi-cv.pdf"
+# Retirer l'ancien nom public pour éviter les caches navigateur
+rm -f "$ROOT/assets/colaborateurs/cv/franck-kouassi-cv.pdf"
+
+echo "OK — CV synchronisé depuis $(basename "$pdf_file") vers assets/colaborateurs/cv/Cv-KOUASSI-Franck-updated.pdf"
