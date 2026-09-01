@@ -3766,6 +3766,41 @@ textarea.form__control {
     color: #E2ECF7;
 }
 
+.geo-chips {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.55rem;
+    list-style: none;
+    margin: 0 auto 1.25rem;
+    padding: 0;
+    max-width: 48rem;
+}
+
+.geo-chips li {
+    padding: 0.4rem 0.85rem;
+    border-radius: 999px;
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    color: var(--primary-color);
+    font-size: 0.875rem;
+    font-weight: var(--font-medium);
+}
+
+.geo-sites {
+    text-align: center;
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin: 0 auto;
+    max-width: 40rem;
+}
+
+.dark-theme .geo-chips li {
+    background: var(--card-bg, #0f1b29);
+    border-color: rgba(148, 190, 235, 0.14);
+    color: #E2ECF7;
+}
+
 @media (max-width: 992px) {
     .services__grid { grid-template-columns: 1fr; }
     .services-page .sectors-grid { grid-template-columns: repeat(2, 1fr); }
