@@ -1,49 +1,17 @@
 # Ivoire Tech Solutions
 
-> Cabinet de conseil en technology, digitalisation, data science, intelligence artificielle (IA / AI), solutions IT et cybersécurité, basé à Abidjan, Côte d'Ivoire.
+Cabinet de conseil en data science, intelligence artificielle, solutions IT et cybersécurité, basé à Abidjan, Côte d'Ivoire.
 
 - Site officiel : https://ivoiretech-solutions.com
-- Domaine alternatif : https://ivoire-tech-solutions.com
+- Domaine alternatif (redirection) : https://ivoire-tech-solutions.com
 - Contact : contact@ivoiretech-solutions.com
 - LinkedIn : https://www.linkedin.com/company/ivtech-solutions
 
-## Noms et variantes
-
-Ivoire Tech Solutions est aussi recherchée sous les noms :
-
-- IvTech
-- IvTech Solutions
-- IVTECH SOLUTIONS
-- Ivtech Solutions
-- ivtechsolution
-- ivtechsolutions
-- Ivoire Tech
-- Ivoire-Tech Solutions
-- ivoire-tech-solutions
-- IvoireTech Solutions
-
-Dénomination sociale : IVTECH SOLUTIONS (SARLU, RCCM CI-ABJ-03-2026-B13-09993).
+Aussi connue sous le nom IvTech / IvTech Solutions.
+Dénomination sociale : IVTECH SOLUTIONS (SARLU).
 Fondateur : Dr. Franck Antelme KOUASSI.
-Siège : Cocody, 2 Plateau (près du ONEP), Lot 808, Ilot 87, Abidjan, Côte d'Ivoire.
+Siège : Cocody, 2 Plateau, Abidjan, Côte d'Ivoire.
 
-## Zone d'intervention
+Zone : Côte d'Ivoire, CEDEAO et Afrique de l'Ouest.
 
-Côte d'Ivoire, espace CDEAO / CEDEAO (Afrique de l'Ouest), UEMOA et Afrique francophone : Sénégal, Bénin, Burkina Faso, Mali, Togo, Niger, Guinée, Ghana, Nigeria, Liberia, Sierra Leone, Cap-Vert, Gambie, Guinée-Bissau, et plus largement l'Afrique.
-
-## Expertises
-
-- Data science, analyses prédictives, BI, machine learning
-- Intelligence artificielle (IA, AI, GenAI, NLP)
-- Digitalisation et transformation digitale
-- Technology et tech solutions (applications, architecture data, intégration SI)
-- Cybersécurité
-- Formation et accompagnement des équipes
-
-## Pages
-
-- Accueil : https://ivoiretech-solutions.com/
-- À propos : https://ivoiretech-solutions.com/a-propos.html
-- Services : https://ivoiretech-solutions.com/services.html
-- Approche : https://ivoiretech-solutions.com/approche.html
-- Collaborateurs : https://ivoiretech-solutions.com/collaborateurs.html
-- Contact : https://ivoiretech-solutions.com/contact.html
+Pages : / a-propos.html / services.html / approche.html / collaborateurs.html / contact.html

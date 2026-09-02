@@ -1,38 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://ivoiretech-solutions.com/</loc>
-    <lastmod>2026-09-01</lastmod>
+    <lastmod>2026-09-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://ivoiretech-solutions.com/assets/images/og-banner.jpg</image:loc>
+      <image:title>Ivoire Tech Solutions — cabinet data science et IA à Abidjan</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://ivoiretech-solutions.com/assets/images/IvTech-Logo-Horizontal-Couleur.png</image:loc>
+      <image:title>Logo Ivoire Tech Solutions</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://ivoiretech-solutions.com/assets/images/svc-data-science.jpg</image:loc>
+      <image:title>Consulting data science à Abidjan</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://ivoiretech-solutions.com/assets/images/svc-ia.jpg</image:loc>
+      <image:title>Intelligence artificielle — Ivoire Tech Solutions</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://ivoiretech-solutions.com/a-propos.html</loc>
-    <lastmod>2026-09-01</lastmod>
+    <lastmod>2026-09-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ivoiretech-solutions.com/services.html</loc>
-    <lastmod>2026-09-01</lastmod>
+    <lastmod>2026-09-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://ivoiretech-solutions.com/assets/images/svc-data-science.jpg</image:loc>
+      <image:title>Consulting data science</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://ivoiretech-solutions.com/assets/images/svc-ia.jpg</image:loc>
+      <image:title>Intelligence artificielle</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://ivoiretech-solutions.com/assets/images/svc-it.jpg</image:loc>
+      <image:title>Solutions IT sur mesure</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://ivoiretech-solutions.com/assets/images/svc-cybersecurite.jpg</image:loc>
+      <image:title>Cybersécurité</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://ivoiretech-solutions.com/assets/images/svc-formation.jpg</image:loc>
+      <image:title>Formation data et IA</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://ivoiretech-solutions.com/approche.html</loc>
-    <lastmod>2026-09-01</lastmod>
+    <lastmod>2026-09-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ivoiretech-solutions.com/collaborateurs.html</loc>
-    <lastmod>2026-09-01</lastmod>
+    <lastmod>2026-09-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ivoiretech-solutions.com/contact.html</loc>
-    <lastmod>2026-09-01</lastmod>
+    <lastmod>2026-09-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
