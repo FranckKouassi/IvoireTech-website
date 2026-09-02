@@ -13,10 +13,10 @@ const translations = {
         nav_contact: "Contactez-nous",
 
         /* ===== Hero ===== */
-        hero_eyebrow: "Cabinet de conseil · Abidjan",
+        hero_eyebrow: "Ivoire Tech Solutions",
         hero_badge: "Data Science · IA · IT · Cybersécurité",
-        hero_title: "Ivoire Tech Solutions — cabinet data science et IA à <span class=\"accent\">Abidjan</span>",
-        hero_subtitle: "Cabinet de conseil à Abidjan : data science, IA, solutions IT et cybersécurité pour les entreprises en Côte d'Ivoire et en Afrique de l'Ouest.",
+        hero_title: "L'intelligence des données au service de la <span class=\"accent\">performance africaine</span>",
+        hero_subtitle: "De la collecte à l'action : nous faisons parler vos données pour booster vos performances.",
         hero_btn_contact: "Demander un diagnostic",
         hero_btn_services: "Explorer nos expertises",
         hero_trust1: "Standards techniques internationaux",
@@ -71,10 +71,6 @@ const translations = {
         home_team_roster_l: "Les collaborateurs",
         home_team_p: "Docteur en statistiques appliquées (INSA Toulouse) et titulaire d’un Master Data Science (Paris-Saclay). Il a fondé Ivoire Tech Solutions pour mettre cette expérience au service des organisations africaines.",
         home_cta_d: "Un premier diagnostic gratuit pour situer votre maturité data et identifier vos priorités. Sans engagement.",
-        geo_sub: "Présence",
-        geo_t: "Un cabinet basé à Abidjan, actif en Afrique de l'Ouest",
-        geo_d: "Ivoire Tech Solutions (aussi appelée IvTech) est implantée à Cocody, Abidjan. Nous accompagnons des entreprises et institutions en Côte d'Ivoire et dans plusieurs pays de la CEDEAO, sur des projets de data science, d'intelligence artificielle, de digitalisation et de cybersécurité.",
-        geo_sites: "Site officiel : ivoiretech-solutions.com. Le nom de domaine ivoire-tech-solutions.com redirige vers ce site.",
         home_sect_cta: "Explorer les secteurs",
 
         /* ===== Services (pages dédiées — détaillés) ===== */
@@ -261,7 +257,7 @@ const translations = {
         form_success: "Votre client mail va s'ouvrir — envoyez le message pour nous contacter.",
 
         /* ===== Footer ===== */
-        ft_desc: "Cabinet de conseil en data science, intelligence artificielle, solutions IT et cybersécurité, basé à Abidjan.",
+        ft_desc: "Cabinet de conseil en data science, intelligence artificielle, solutions IT et cybersécurité, basé à Abidjan et actif auprès des entreprises et institutions africaines.",
         ft_links: "Navigation",
         ft_srv: "Nos services",
         ft_contact: "Contact",
@@ -270,9 +266,9 @@ const translations = {
 
         /* ===== Page À propos ===== */
         about_hero_t: "À propos d'Ivoire Tech Solutions",
-        about_hero_d: "Cabinet de consulting data science, intelligence artificielle et solutions IT, implanté à Abidjan pour les entreprises et institutions d’Afrique.",
+        about_hero_d: "Cabinet de consulting data science, intelligence artificielle, solutions IT et cybersécurité, implanté à Abidjan pour les entreprises et institutions d’Afrique.",
         about_intro_t: "Qui sommes-nous",
-        about_intro_d: "Ivoire Tech Solutions, aussi appelée IvTech, est un cabinet ivoirien créé pour être proche des entreprises et institutions ivoiriennes. Notre objectif est de comprendre vos besoins et de travailler en étroite collaboration avec vous, afin d’apporter du dynamisme, de la performance et un accompagnement après l’intervention.",
+        about_intro_d: "Ivoire Tech Solutions est un cabinet ivoirien créé pour être proche des entreprises et institutions ivoiriennes. Notre objectif est de comprendre vos besoins et de travailler en étroite collaboration avec vous, afin d’apporter du dynamisme, de la performance et un accompagnement après l’intervention. Nous travaillons avec des directions générales, financières, commerciales et IT qui veulent des résultats concrets.",
         about_flow_1: "Proximité terrain",
         about_flow_2: "Rigueur technique",
         about_flow_3: "Impact métier",
@@ -295,11 +291,7 @@ const translations = {
         info_legal_name: "Dénomination sociale",
         info_legal_name_v: "IVTECH SOLUTIONS",
         info_brand: "Nom commercial",
-        info_brand_v: "Ivoire Tech Solutions (IvTech)",
-        info_aliases: "Nom usuel",
-        info_aliases_v: "IvTech, IvTech Solutions",
-        info_sites: "Sites web",
-        info_sites_v: "ivoiretech-solutions.com (ivoire-tech-solutions.com redirige ici)",
+        info_brand_v: "Ivoire Tech Solutions",
         info_rccm: "N° RCCM",
         info_rccm_v: "CI-ABJ-03-2026-B13-09993",
         info_founder: "Fondateur",
@@ -310,16 +302,16 @@ const translations = {
         info_hq: "Siège social",
         info_hq_v: "Cocody, 2 Plateau (près du ONEP), Lot 808, Ilot 87, Abidjan",
         info_sector: "Activités",
-        info_sector_v: "Consulting data science, solutions IT et IA, formations, transition numérique",
+        info_sector_v: "Consulting data science, solutions IT & IA, formations, transition numérique",
         info_zone: "Zone d'intervention",
-        info_zone_v: "Côte d'Ivoire, CEDEAO et Afrique de l'Ouest",
+        info_zone_v: "Côte d'Ivoire, UEMOA et Afrique francophone",
         info_capital: "Capital social",
         info_capital_v: "1 000 000 FCFA",
         info_legal: "Forme juridique",
         info_legal_v: "SARLU (SARL Unipersonnelle — OHADA)",
 
         /* ===== Page Services ===== */
-        services_hero_t: "Cabinet data science et IA à Abidjan",
+        services_hero_t: "Conseil data, IA, solutions IT, cybersécurité et formation",
         services_hero_d: "De l’audit de vos données jusqu’aux modèles en production, aux solutions IT, à la sécurisation de vos systèmes et à la formation de vos équipes, avec un dimensionnement et des budgets pensés pour les organisations aspirant à la transition numérique.",
         srv1_li1: "<strong>Audit & diagnostic</strong> Maturité data, cartographie des sources, gains rapides et feuille de route à 90 jours",
         srv1_li2: "<strong>Modélisation prédictive</strong> Crédit, attrition client, ventes, ruptures de stock, risque opérationnel",
@@ -394,10 +386,10 @@ const translations = {
         nav_contact: "Contact Us",
 
         /* ===== Hero ===== */
-        hero_eyebrow: "Consulting firm · Abidjan",
+        hero_eyebrow: "Ivoire Tech Solutions",
         hero_badge: "Data Science · AI · IT · Cybersecurity",
-        hero_title: "Ivoire Tech Solutions — data science and AI consultancy in <span class=\"accent\">Abidjan</span>",
-        hero_subtitle: "A consulting firm in Abidjan: data science, AI, IT solutions and cybersecurity for companies in Côte d'Ivoire and West Africa.",
+        hero_title: "Data intelligence driving <span class=\"accent\">African performance</span>",
+        hero_subtitle: "From collection to action: we make your data speak to boost your performance.",
         hero_btn_contact: "Request a diagnostic",
         hero_btn_services: "Explore our capabilities",
         hero_trust1: "International technical standards",
@@ -452,10 +444,6 @@ const translations = {
         home_team_roster_l: "Collaborators",
         home_team_p: "PhD in Applied Statistics (INSA Toulouse) and a Master’s in Data Science (Paris-Saclay). He founded Ivoire Tech Solutions to put that experience to work for African organizations.",
         home_cta_d: "A free first diagnostic to assess your data maturity and identify your priorities. No commitment.",
-        geo_sub: "Presence",
-        geo_t: "A firm based in Abidjan, active in West Africa",
-        geo_d: "Ivoire Tech Solutions (also known as IvTech) is based in Cocody, Abidjan. We work with companies and institutions in Côte d'Ivoire and several ECOWAS countries on data science, artificial intelligence, digitalisation and cybersecurity projects.",
-        geo_sites: "Official site: ivoiretech-solutions.com. The ivoire-tech-solutions.com domain redirects here.",
         home_sect_cta: "Explore industries",
 
         /* ===== Services (dedicated pages — detailed) ===== */
@@ -642,7 +630,7 @@ const translations = {
         form_success: "Your email client will open — send the message to contact us.",
 
         /* ===== Footer ===== */
-        ft_desc: "A consulting firm in data science, artificial intelligence, IT solutions and cybersecurity, based in Abidjan.",
+        ft_desc: "A consulting firm in data science, artificial intelligence, IT solutions and cybersecurity, based in Abidjan and working with African companies and institutions.",
         ft_links: "Navigation",
         ft_srv: "Our services",
         ft_contact: "Contact",
@@ -651,9 +639,9 @@ const translations = {
 
         /* ===== About page ===== */
         about_hero_t: "About Ivoire Tech Solutions",
-        about_hero_d: "A data science, artificial intelligence and IT consulting firm based in Abidjan, serving companies and institutions across Africa.",
+        about_hero_d: "A data science, artificial intelligence, IT solutions and cybersecurity consulting firm based in Abidjan, serving companies and institutions across Africa.",
         about_intro_t: "Who we are",
-        about_intro_d: "Ivoire Tech Solutions, also known as IvTech, is an Ivorian consulting firm created to stay close to local companies and institutions. Our goal is to understand your needs and work with you to deliver performance and support after the engagement.",
+        about_intro_d: "Ivoire Tech Solutions is an Ivorian consulting firm created to stay close to local companies and institutions. Our goal is to understand your needs and work in close collaboration with you, to bring momentum, performance and continued support after the engagement. We work with executive, finance, commercial and IT departments that want concrete results.",
         about_flow_1: "Local proximity",
         about_flow_2: "Technical rigor",
         about_flow_3: "Business impact",
@@ -676,11 +664,7 @@ const translations = {
         info_legal_name: "Legal name",
         info_legal_name_v: "IVTECH SOLUTIONS",
         info_brand: "Trade name",
-        info_brand_v: "Ivoire Tech Solutions (IvTech)",
-        info_aliases: "Also known as",
-        info_aliases_v: "IvTech, IvTech Solutions",
-        info_sites: "Websites",
-        info_sites_v: "ivoiretech-solutions.com (ivoire-tech-solutions.com redirects here)",
+        info_brand_v: "Ivoire Tech Solutions",
         info_rccm: "Trade register no.",
         info_rccm_v: "CI-ABJ-03-2026-B13-09993",
         info_founder: "Founder",
@@ -691,17 +675,16 @@ const translations = {
         info_hq: "Head office",
         info_hq_v: "Cocody, 2 Plateau (near ONEP), Lot 808, Block 87, Abidjan",
         info_sector: "Activities",
-        info_sector_v: "Data science consulting, custom IT and AI solutions, training, digital transition",
+        info_sector_v: "Data science consulting, custom IT & AI solutions, training, digital transition",
         info_zone: "Area of operation",
-        info_zone_v: "Côte d'Ivoire, ECOWAS and West Africa",
+        info_zone_v: "Côte d'Ivoire, WAEMU and French-speaking Africa",
         info_capital: "Share capital",
         info_capital_v: "1,000,000 FCFA",
         info_legal: "Legal form",
         info_legal_v: "SARLU (Single-member LLC — OHADA)",
 
         /* ===== Services page ===== */
-        /* ===== Services page ===== */
-        services_hero_t: "Data science and AI consultancy in Abidjan",
+        services_hero_t: "Data, AI, IT, cybersecurity and training consulting",
         services_hero_d: "From a data audit to production models, IT solutions, system hardening and team training — with scoping and budgets designed for organizations aspiring to digital transformation.",
         srv1_li1: "<strong>Audit & diagnostic</strong> Data maturity, source mapping, early gains and a 90-day roadmap",
         srv1_li2: "<strong>Predictive modeling</strong> Credit, customer churn, sales, stockouts, operational risk",
