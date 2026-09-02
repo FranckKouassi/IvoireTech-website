@@ -13,8 +13,9 @@ const translations = {
         nav_contact: "Contactez-nous",
 
         /* ===== Hero ===== */
+        hero_eyebrow: "Cabinet de conseil · Abidjan",
         hero_badge: "Data Science · IA · IT · Cybersécurité",
-        hero_title: "Ivoire Tech Solutions — l'intelligence des données au service de la <span class=\"accent\">performance africaine</span>",
+        hero_title: "Ivoire Tech Solutions — cabinet data science et IA à <span class=\"accent\">Abidjan</span>",
         hero_subtitle: "Cabinet de conseil à Abidjan : data science, IA, solutions IT et cybersécurité pour les entreprises en Côte d'Ivoire et en Afrique de l'Ouest.",
         hero_btn_contact: "Demander un diagnostic",
         hero_btn_services: "Explorer nos expertises",
@@ -318,7 +319,7 @@ const translations = {
         info_legal_v: "SARLU (SARL Unipersonnelle — OHADA)",
 
         /* ===== Page Services ===== */
-        services_hero_t: "Conseil data, IA, solutions IT, cybersécurité et formation",
+        services_hero_t: "Cabinet data science et IA à Abidjan",
         services_hero_d: "De l’audit de vos données jusqu’aux modèles en production, aux solutions IT, à la sécurisation de vos systèmes et à la formation de vos équipes, avec un dimensionnement et des budgets pensés pour les organisations aspirant à la transition numérique.",
         srv1_li1: "<strong>Audit & diagnostic</strong> Maturité data, cartographie des sources, gains rapides et feuille de route à 90 jours",
         srv1_li2: "<strong>Modélisation prédictive</strong> Crédit, attrition client, ventes, ruptures de stock, risque opérationnel",
@@ -364,6 +365,8 @@ const translations = {
         faq_a6: "Oui. Ivoire Tech Solutions est aussi connue sous le nom IvTech. Le domaine ivoire-tech-solutions.com redirige vers le site officiel ivoiretech-solutions.com.",
         faq_q7: "Intervenez-vous aussi sur la digitalisation, au-delà de la data ?",
         faq_a7: "Oui. Nous accompagnons aussi la digitalisation des processus, les applications métier, l'architecture data, l'intégration au système d'information et la cybersécurité.",
+        faq_q8: "Combien coûte un projet data science en Côte d'Ivoire ?",
+        faq_a8: "Le budget dépend du périmètre (audit, modèle, mise en production). Nous commençons par un diagnostic gratuit à Abidjan pour chiffrer un premier chantier utile, sans engagement.",
 
         /* ===== Page Approche ===== */
         approach_hero_d: "Du cadrage métier à la mise en production : une méthode structurée, des jalons de validation à chaque étape, des livrables conçus pour être utilisés au quotidien.",
@@ -391,8 +394,9 @@ const translations = {
         nav_contact: "Contact Us",
 
         /* ===== Hero ===== */
+        hero_eyebrow: "Consulting firm · Abidjan",
         hero_badge: "Data Science · AI · IT · Cybersecurity",
-        hero_title: "Ivoire Tech Solutions — data intelligence driving <span class=\"accent\">African performance</span>",
+        hero_title: "Ivoire Tech Solutions — data science and AI consultancy in <span class=\"accent\">Abidjan</span>",
         hero_subtitle: "A consulting firm in Abidjan: data science, AI, IT solutions and cybersecurity for companies in Côte d'Ivoire and West Africa.",
         hero_btn_contact: "Request a diagnostic",
         hero_btn_services: "Explore our capabilities",
@@ -697,7 +701,7 @@ const translations = {
 
         /* ===== Services page ===== */
         /* ===== Services page ===== */
-        services_hero_t: "Data, AI, IT, cybersecurity and training consulting",
+        services_hero_t: "Data science and AI consultancy in Abidjan",
         services_hero_d: "From a data audit to production models, IT solutions, system hardening and team training — with scoping and budgets designed for organizations aspiring to digital transformation.",
         srv1_li1: "<strong>Audit & diagnostic</strong> Data maturity, source mapping, early gains and a 90-day roadmap",
         srv1_li2: "<strong>Predictive modeling</strong> Credit, customer churn, sales, stockouts, operational risk",
@@ -743,6 +747,8 @@ const translations = {
         faq_a6: "Yes. Ivoire Tech Solutions is also known as IvTech. The ivoire-tech-solutions.com domain redirects to the official site ivoiretech-solutions.com.",
         faq_q7: "Do you also work on digitalisation, beyond data?",
         faq_a7: "Yes. We also support process digitalisation, business applications, data architecture, system integration and cybersecurity.",
+        faq_q8: "How much does a data science project cost in Côte d'Ivoire?",
+        faq_a8: "The budget depends on scope (audit, model, production). We start with a free diagnostic in Abidjan to price a first useful workstream, with no commitment.",
 
         /* ===== Approach page ===== */
         approach_hero_d: "From business framing to production: a structured method, validation gates at every step, deliverables built for daily use.",
