@@ -14,7 +14,7 @@ const translations = {
 
         /* ===== Hero ===== */
         hero_badge: "Data Science · IA · IT · Cybersécurité",
-        hero_title: "L'intelligence des données au service de la <span class=\"accent\">performance africaine</span>",
+        hero_title: "Ivoire Tech Solutions — l'intelligence des données au service de la <span class=\"accent\">performance africaine</span>",
         hero_subtitle: "Cabinet de conseil à Abidjan : data science, IA, solutions IT et cybersécurité pour les entreprises en Côte d'Ivoire et en Afrique de l'Ouest.",
         hero_btn_contact: "Demander un diagnostic",
         hero_btn_services: "Explorer nos expertises",
@@ -392,7 +392,7 @@ const translations = {
 
         /* ===== Hero ===== */
         hero_badge: "Data Science · AI · IT · Cybersecurity",
-        hero_title: "Data intelligence driving <span class=\"accent\">African performance</span>",
+        hero_title: "Ivoire Tech Solutions — data intelligence driving <span class=\"accent\">African performance</span>",
         hero_subtitle: "A consulting firm in Abidjan: data science, AI, IT solutions and cybersecurity for companies in Côte d'Ivoire and West Africa.",
         hero_btn_contact: "Request a diagnostic",
         hero_btn_services: "Explore our capabilities",
