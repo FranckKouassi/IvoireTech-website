@@ -71,6 +71,10 @@ const translations = {
         home_team_roster_l: "Les collaborateurs",
         home_team_p: "Docteur en statistiques appliquées (INSA Toulouse) et titulaire d’un Master Data Science (Paris-Saclay). Il a fondé Ivoire Tech Solutions pour mettre cette expérience au service des organisations africaines.",
         home_cta_d: "Un premier diagnostic gratuit pour situer votre maturité data et identifier vos priorités. Sans engagement.",
+        geo_sub: "Présence",
+        geo_t: "Un cabinet basé à Abidjan, actif en Afrique de l'Ouest",
+        geo_d: "Ivoire Tech Solutions (aussi appelée IvTech) est implantée à Cocody, Abidjan. Nous accompagnons des entreprises et institutions en Côte d'Ivoire et dans plusieurs pays de la CEDEAO, sur des projets de data science, d'intelligence artificielle, de digitalisation et de cybersécurité.",
+        geo_sites: "Site officiel : ivoiretech-solutions.com. Le nom de domaine ivoire-tech-solutions.com redirige vers ce site.",
         home_sect_cta: "Explorer les secteurs",
 
         /* ===== Services (pages dédiées — détaillés) ===== */
@@ -444,6 +448,10 @@ const translations = {
         home_team_roster_l: "Collaborators",
         home_team_p: "PhD in Applied Statistics (INSA Toulouse) and a Master’s in Data Science (Paris-Saclay). He founded Ivoire Tech Solutions to put that experience to work for African organizations.",
         home_cta_d: "A free first diagnostic to assess your data maturity and identify your priorities. No commitment.",
+        geo_sub: "Presence",
+        geo_t: "A firm based in Abidjan, active in West Africa",
+        geo_d: "Ivoire Tech Solutions (also known as IvTech) is based in Cocody, Abidjan. We work with companies and institutions in Côte d'Ivoire and several ECOWAS countries on data science, artificial intelligence, digitalisation and cybersecurity projects.",
+        geo_sites: "Official site: ivoiretech-solutions.com. The ivoire-tech-solutions.com domain redirects here.",
         home_sect_cta: "Explore industries",
 
         /* ===== Services (dedicated pages — detailed) ===== */
