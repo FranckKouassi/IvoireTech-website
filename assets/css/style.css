@@ -4559,6 +4559,7 @@ textarea.form__control {
 .team-page .collab-profile--yao { --profile-accent: var(--green-color); }
 .team-page .collab-profile--djibo { --profile-accent: #475569; }
 .team-page .collab-profile--arthur { --profile-accent: var(--secondary-color); }
+.team-page .collab-profile--aka { --profile-accent: #0f766e; }
 
 .team-page .collab-profile--card::after {
     content: '';
@@ -6031,6 +6032,7 @@ textarea.form__control {
 .home-page .home-team-mini--yao { --mini-accent: var(--green-color); }
 .home-page .home-team-mini--djibo { --mini-accent: #475569; }
 .home-page .home-team-mini--arthur { --mini-accent: var(--secondary-color); }
+.home-page .home-team-mini--aka { --mini-accent: #0f766e; }
 
 .home-page .home-team-mini:hover .home-team-mini__avatar {
     transform: scale(1.06);

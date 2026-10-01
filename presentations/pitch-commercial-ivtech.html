@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivoire Tech Solutions — Présentation commerciale</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0F2A44;
+            --primary-dark: #0A1C2E;
+            --secondary: #D97706;
+            --green: #0F766E;
+            --accent: #1F6FB2;
+            --text: #1E293B;
+            --text-light: #64748B;
+            --light: #F7F9FC;
+            --white: #ffffff;
+            --gradient-hero: linear-gradient(160deg, #071520 0%, #0F2A44 48%, #163A5C 100%);
+            --gradient-accent: linear-gradient(90deg, #1F6FB2, #0F766E);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text);
+            background: var(--primary-dark);
+            overflow: hidden;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Sora', 'Inter', sans-serif;
+            font-weight: 700;
+            line-height: 1.15;
+        }
+
+        .deck {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+
+        .slide {
+            position: absolute;
+            inset: 0;
+            padding: 3rem 4rem 4.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.35s ease;
+            background: var(--light);
+        }
+
+        .slide.is-active {
+            opacity: 1;
+            pointer-events: auto;
+            z-index: 1;
+        }
+
+        .slide--dark {
+            background: var(--gradient-hero);
+            color: var(--white);
+        }
+
+        .slide--dark .lead,
+        .slide--dark .muted,
+        .slide--dark li { color: rgba(255, 255, 255, 0.88); }
+
+        .slide__logo {
+            position: absolute;
+            top: 2rem;
+            left: 4rem;
+            height: 52px;
+            width: auto;
+        }
+
+        .slide__logo--light { filter: none; }
+
+        .slide__footer {
+            position: absolute;
+            bottom: 1.75rem;
+            left: 4rem;
+            right: 4rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.75rem;
+            color: var(--text-light);
+        }
+
+        .slide--dark .slide__footer { color: rgba(255, 255, 255, 0.55); }
+
+        .slide__footer .bar {
+            flex: 1;
+            height: 3px;
+            margin: 0 1rem;
+            background: var(--gradient-accent);
+            border-radius: 2px;
+            max-width: 120px;
+        }
+
+        .eyebrow {
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 0.75rem;
+        }
+
+        .slide--dark .eyebrow { color: var(--secondary); }
+
+        .slide h1 {
+            font-size: clamp(2rem, 4vw, 2.85rem);
+            max-width: 18ch;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .slide--dark h1 { color: var(--white); }
+
+        .slide h2 {
+            font-size: clamp(1.65rem, 3vw, 2.15rem);
+            color: var(--primary);
+            margin-bottom: 1.25rem;
+        }
+
+        .slide--dark h2 { color: var(--white); }
+
+        .lead {
+            font-size: 1.2rem;
+            line-height: 1.55;
+            max-width: 42rem;
+            color: var(--text-light);
+        }
+
+        .quote {
+            font-size: 1.35rem;
+            line-height: 1.5;
+            max-width: 44rem;
+            border-left: 4px solid var(--secondary);
+            padding-left: 1.25rem;
+            margin-top: 0.5rem;
+        }
+
+        .slide--dark .quote { border-left-color: var(--secondary); }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem 2.5rem;
+            margin-top: 1rem;
+            max-width: 56rem;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-top: 1rem;
+            max-width: 58rem;
+        }
+
+        .grid-5 {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 0.75rem;
+            margin-top: 1.25rem;
+            max-width: 58rem;
+        }
+
+        .card {
+            background: var(--white);
+            border: 1px solid rgba(15, 42, 68, 0.08);
+            border-radius: 0.5rem;
+            padding: 1rem 1.1rem;
+        }
+
+        .card h3 {
+            font-size: 0.95rem;
+            color: var(--primary);
+            margin-bottom: 0.4rem;
+        }
+
+        .card p {
+            font-size: 0.82rem;
+            line-height: 1.45;
+            color: var(--text-light);
+        }
+
+        .card--accent {
+            border-top: 3px solid var(--accent);
+        }
+
+        .card--teal { border-top: 3px solid var(--green); }
+        .card--amber { border-top: 3px solid var(--secondary); }
+
+        .slide--dark .card {
+            background: rgba(255, 255, 255, 0.06);
+            border-color: rgba(255, 255, 255, 0.12);
+        }
+
+        .slide--dark .card h3 { color: var(--white); }
+        .slide--dark .card p { color: rgba(255, 255, 255, 0.75); }
+
+        ul.check {
+            list-style: none;
+            margin-top: 0.75rem;
+            max-width: 40rem;
+        }
+
+        ul.check li {
+            position: relative;
+            padding-left: 1.35rem;
+            margin-bottom: 0.55rem;
+            line-height: 1.45;
+            font-size: 0.95rem;
+        }
+
+        ul.check li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0.45rem;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--green);
+        }
+
+        .compare {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            max-width: 54rem;
+            margin-top: 0.5rem;
+        }
+
+        .compare__col {
+            padding: 1.25rem;
+            border-radius: 0.5rem;
+            font-size: 0.88rem;
+            line-height: 1.5;
+        }
+
+        .compare__col--bad {
+            background: var(--gray-100, #F1F5F9);
+            color: var(--text-light);
+        }
+
+        .compare__col--good {
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        .compare__col h3 {
+            font-size: 1rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .compare__col--good h3 { color: var(--secondary); }
+
+        .step {
+            text-align: center;
+            padding: 0.75rem 0.5rem;
+        }
+
+        .step__num {
+            font-family: 'Sora', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--accent);
+            margin-bottom: 0.35rem;
+        }
+
+        .step__title {
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 0.25rem;
+        }
+
+        .step__desc {
+            font-size: 0.68rem;
+            line-height: 1.35;
+            color: var(--text-light);
+        }
+
+        .cta-box {
+            margin-top: 1.5rem;
+            padding: 1.25rem 1.5rem;
+            background: var(--primary);
+            color: var(--white);
+            border-radius: 0.5rem;
+            max-width: 36rem;
+        }
+
+        .cta-box strong { color: var(--secondary); }
+
+        .contact-line {
+            font-size: 1.05rem;
+            margin-top: 0.5rem;
+        }
+
+        .contact-line a { color: var(--accent); text-decoration: none; font-weight: 600; }
+        .slide--dark .contact-line a { color: #7ec8ff; }
+
+        .nav-hint {
+            position: fixed;
+            bottom: 1rem;
+            right: 1.5rem;
+            z-index: 100;
+            font-size: 0.7rem;
+            color: rgba(255, 255, 255, 0.45);
+            background: rgba(0, 0, 0, 0.35);
+            padding: 0.35rem 0.65rem;
+            border-radius: 0.25rem;
+        }
+
+        .info-table {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 0.4rem 1.25rem;
+            font-size: 0.88rem;
+            max-width: 36rem;
+            margin-top: 0.5rem;
+        }
+
+        .info-table dt {
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .info-table dd { color: var(--text-light); }
+
+        @media print {
+            body { overflow: visible; background: white; }
+            .slide {
+                position: relative;
+                page-break-after: always;
+                opacity: 1 !important;
+                pointer-events: auto;
+                min-height: 100vh;
+            }
+            .nav-hint { display: none; }
+        }
+
+        @media (max-width: 900px) {
+            .slide { padding: 2rem 1.5rem 3.5rem; }
+            .grid-2, .grid-3, .grid-5, .compare { grid-template-columns: 1fr; }
+            .slide__logo { left: 1.5rem; height: 40px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="deck" id="deck">
+
+        <!-- 1 -->
+        <section class="slide slide--dark is-active" data-slide="1">
+            <img class="slide__logo" src="../assets/images/IvTech-Logo-Horizontal-FondSombre.svg" alt="Ivoire Tech Solutions">
+            <p class="eyebrow">Présentation commerciale · 2026</p>
+            <h1>L'intelligence des données au service de la performance africaine</h1>
+            <p class="lead" style="color: rgba(255,255,255,0.85); max-width: 36rem;">
+                Cabinet de conseil en <strong style="color:#fff">data science</strong>, <strong style="color:#fff">IA</strong>, <strong style="color:#fff">solutions IT</strong> et <strong style="color:#fff">cybersécurité</strong> — Abidjan, Côte d'Ivoire.
+            </p>
+            <div class="slide__footer">
+                <span>ivoiretech-solutions.com</span>
+                <span class="bar"></span>
+                <span>1 / 12</span>
+            </div>
+        </section>
+
+        <!-- 2 -->
+        <section class="slide" data-slide="2">
+            <img class="slide__logo slide__logo--light" src="../assets/images/IvTech-Logo-Horizontal-Couleur.svg" alt="">
+            <p class="eyebrow">Qui sommes-nous</p>
+            <h2>Ivoire Tech Solutions (IvTech)</h2>
+            <p class="lead">
+                Cabinet ivoirien créé pour être proche des entreprises et institutions. Nous travaillons avec les directions générales, financières, commerciales et IT qui veulent des <strong>résultats concrets</strong>.
+            </p>
+            <ul class="check">
+                <li>Standards techniques internationaux</li>
+                <li>Tarifs adaptés au marché ivoirien et ouest-africain</li>
+                <li>100 % focalisé Data Science, IA, IT & cybersécurité</li>
+            </ul>
+            <div class="slide__footer"><span>IvTech</span><span class="bar"></span><span>2 / 12</span></div>
+        </section>
+
+        <!-- 3 -->
+        <section class="slide slide--dark" data-slide="3">
+            <img class="slide__logo" src="../assets/images/IvTech-Logo-Horizontal-FondSombre.svg" alt="">
+            <p class="eyebrow">Pitch 30 secondes</p>
+            <p class="quote">
+                « Nous transformons vos données en décisions actionnables : audit, modèles prédictifs, tableaux de bord, IA en production, sécurisation du SI. Tout commence par un <strong style="color:var(--secondary)">diagnostic data gratuit</strong>, sans engagement, pour identifier les chantiers à fort impact. »
+            </p>
+            <div class="slide__footer"><span>Commercial</span><span class="bar"></span><span>3 / 12</span></div>
+        </section>
+
+        <!-- 4 -->
+        <section class="slide" data-slide="4">
+            <img class="slide__logo slide__logo--light" src="../assets/images/IvTech-Logo-Horizontal-Couleur.svg" alt="">
+            <p class="eyebrow">Mission & vision</p>
+            <div class="grid-2">
+                <div class="card card--accent">
+                    <h3>Mission</h3>
+                    <p>Rendre la data science, l'IT et l'IA accessibles et utiles aux organisations africaines : cas d'usage à fort ROI, outils adoptés par les équipes, impact métier mesuré.</p>
+                </div>
+                <div class="card card--teal">
+                    <h3>Vision</h3>
+                    <p>Devenir un cabinet de référence en Afrique pour le conseil et la réalisation de projets data, IA et IT, reconnu pour son pragmatisme et la qualité des livrables.</p>
+                </div>
+            </div>
+            <p class="lead" style="margin-top:1.25rem; font-size:1rem;">
+                <strong>Notre force :</strong> exigence technique + connaissance du terrain (données fragmentées, processus locaux, contraintes budget & réglementation).
+            </p>
+            <div class="slide__footer"><span>Mission</span><span class="bar"></span><span>4 / 12</span></div>
+        </section>
+
+        <!-- 5 -->
+        <section class="slide" data-slide="5">
+            <img class="slide__logo slide__logo--light" src="../assets/images/IvTech-Logo-Horizontal-Couleur.svg" alt="">
+            <p class="eyebrow">Expertises</p>
+            <h2>Cinq piliers, du diagnostic à la production</h2>
+            <div class="grid-5">
+                <div class="card card--accent"><h3>Data Science</h3><p>Audit, analyses, modèles prédictifs</p></div>
+                <div class="card card--accent"><h3>IA</h3><p>Modèles métier & mise en production</p></div>
+                <div class="card card--teal"><h3>IT sur mesure</h3><p>Dashboards, apps, intégration SI</p></div>
+                <div class="card card--amber"><h3>Cybersécurité</h3><p>Audit SI, durcissement, vulnérabilités</p></div>
+                <div class="card card--teal"><h3>Formation</h3><p>Transfert & autonomie des équipes</p></div>
+            </div>
+            <div class="slide__footer"><span>Services</span><span class="bar"></span><span>5 / 12</span></div>
+        </section>
+
+        <!-- 6 -->
+        <section class="slide slide--dark" data-slide="6">
+            <img class="slide__logo" src="../assets/images/IvTech-Logo-Horizontal-FondSombre.svg" alt="">
+            <p class="eyebrow">Secteurs</p>
+            <h2>Là où nous créons de la valeur</h2>
+            <div class="grid-3">
+                <div class="card"><h3>Finance & banque</h3><p>Scoring, fraude mobile money, reporting</p></div>
+                <div class="card"><h3>Télécoms</h3><p>Churn, segmentation, ciblage</p></div>
+                <div class="card"><h3>Agro-industrie</h3><p>Volumes, logistique, climat</p></div>
+                <div class="card"><h3>Santé</h3><p>Parcours de soins, stocks, reporting</p></div>
+                <div class="card"><h3>Distribution</h3><p>Demande, stocks, panier client</p></div>
+                <div class="card"><h3>Énergie & public</h3><p>Consommation, services, planification</p></div>
+            </div>
+            <div class="slide__footer"><span>CI · UEMOA · CEDEAO</span><span class="bar"></span><span>6 / 12</span></div>
+        </section>
+
+        <!-- 7 -->
+        <section class="slide" data-slide="7">
+            <img class="slide__logo slide__logo--light" src="../assets/images/IvTech-Logo-Horizontal-Couleur.svg" alt="">
+            <p class="eyebrow">Méthode</p>
+            <h2>Cinq étapes, jalons à chaque phase</h2>
+            <div class="grid-5">
+                <div class="step"><div class="step__num">01</div><div class="step__title">Comprendre</div><div class="step__desc">Cadrage métier & indicateurs</div></div>
+                <div class="step"><div class="step__num">02</div><div class="step__title">Explorer</div><div class="step__desc">Audit data & recommandation</div></div>
+                <div class="step"><div class="step__num">03</div><div class="step__title">Construire</div><div class="step__desc">Modèles, pipelines, tests</div></div>
+                <div class="step"><div class="step__num">04</div><div class="step__title">Livrer</div><div class="step__desc">Production, doc, formation</div></div>
+                <div class="step"><div class="step__num">05</div><div class="step__title">Accompagner</div><div class="step__desc">Suivi & évolutions</div></div>
+            </div>
+            <p class="lead" style="margin-top:1rem; font-size:0.95rem;">Chaque étape se termine par un livrable et une validation avant d'engager la suivante.</p>
+            <div class="slide__footer"><span>Approche</span><span class="bar"></span><span>7 / 12</span></div>
+        </section>
+
+        <!-- 8 -->
+        <section class="slide" data-slide="8">
+            <img class="slide__logo slide__logo--light" src="../assets/images/IvTech-Logo-Horizontal-Couleur.svg" alt="">
+            <p class="eyebrow">Différenciation</p>
+            <h2>Pourquoi Ivoire Tech Solutions ?</h2>
+            <div class="compare">
+                <div class="compare__col compare__col--bad">
+                    <h3>Les autres</h3>
+                    <ul class="check">
+                        <li style="color:#64748B">Cabinets internationaux hors budget</li>
+                        <li style="color:#64748B">Freelances sans méthode ni relais</li>
+                        <li style="color:#64748B">ESN généralistes, peu data</li>
+                        <li style="color:#64748B">Un livrable, puis silence</li>
+                    </ul>
+                </div>
+                <div class="compare__col compare__col--good">
+                    <h3>IvTech</h3>
+                    <ul class="check">
+                        <li style="color:#fff">Niveau international, tarif local</li>
+                        <li style="color:#fff">Cabinet enregistré, jalons contractuels</li>
+                        <li style="color:#fff">Spécialistes data, IA, IT, cyber</li>
+                        <li style="color:#fff">Suivi post-livraison & formation</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="slide__footer"><span>Valeur</span><span class="bar"></span><span>8 / 12</span></div>
+        </section>
+
+        <!-- 9 -->
+        <section class="slide slide--dark" data-slide="9">
+            <img class="slide__logo" src="../assets/images/IvTech-Logo-Horizontal-FondSombre.svg" alt="">
+            <p class="eyebrow">Équipe</p>
+            <h2>Cinq profils complémentaires</h2>
+            <div class="grid-3" style="grid-template-columns: 1fr 1fr;">
+                <div class="card"><h3>Dr. Franck Antelme KOUASSI</h3><p>Fondateur · Lead R&D & Data Science — Doctorat INSA Toulouse, Master Data Science Paris-Saclay</p></div>
+                <div class="card"><h3>Jean-Charles KOUA</h3><p>Data Analyst senior · Chef de projet data</p></div>
+                <div class="card"><h3>Affoué Marie Josée YAO</h3><p>Data Analyst · Business Intelligence</p></div>
+                <div class="card"><h3>Mamadou DJIBO</h3><p>Ingénieur cybersécurité · Systèmes & réseaux</p></div>
+                <div class="card" style="grid-column: span 2; max-width: 50%;"><h3>Anicet Arthur KOUASSI</h3><p>Data Scientist · Data Analyst</p></div>
+            </div>
+            <div class="slide__footer"><span>Équipe</span><span class="bar"></span><span>9 / 12</span></div>
+        </section>
+
+        <!-- 10 -->
+        <section class="slide" data-slide="10">
+            <img class="slide__logo slide__logo--light" src="../assets/images/IvTech-Logo-Horizontal-Couleur.svg" alt="">
+            <p class="eyebrow">Entreprise</p>
+            <h2>Identité & crédibilité</h2>
+            <dl class="info-table">
+                <dt>Dénomination</dt><dd>IVTECH SOLUTIONS — Ivoire Tech Solutions</dd>
+                <dt>Forme</dt><dd>SARLU (OHADA) · RCCM CI-ABJ-03-2026-B13-09993</dd>
+                <dt>Siège</dt><dd>Cocody, 2 Plateau, Lot 808, Ilot 87, Abidjan</dd>
+                <dt>Zone</dt><dd>Côte d'Ivoire, UEMOA, Afrique francophone</dd>
+                <dt>Fondateur</dt><dd>Dr. Franck Antelme KOUASSI</dd>
+            </dl>
+            <div class="slide__footer"><span>Légal</span><span class="bar"></span><span>10 / 12</span></div>
+        </section>
+
+        <!-- 11 -->
+        <section class="slide" data-slide="11">
+            <img class="slide__logo slide__logo--light" src="../assets/images/IvTech-Logo-Horizontal-Couleur.svg" alt="">
+            <p class="eyebrow">Offre d'entrée</p>
+            <h2>Ce que vous pouvez proposer</h2>
+            <ul class="check">
+                <li><strong>Diagnostic data gratuit</strong> — sans engagement</li>
+                <li>Réponse sous <strong>48 h ouvrées</strong> après prise de contact</li>
+                <li>Budget projet : <strong>après cadrage</strong> (périmètre audit / modèle / production / formation)</li>
+                <li>Formations et interventions <strong>sur site à Abidjan</strong> possibles</li>
+            </ul>
+            <div class="cta-box">
+                <strong>Ne pas promettre</strong> prix ferme, délais ou résultats chiffrés sans validation interne (fondateur / gérant).
+            </div>
+            <div class="slide__footer"><span>Commercial</span><span class="bar"></span><span>11 / 12</span></div>
+        </section>
+
+        <!-- 12 -->
+        <section class="slide slide--dark" data-slide="12">
+            <img class="slide__logo" src="../assets/images/IvTech-Logo-Horizontal-FondSombre.svg" alt="">
+            <p class="eyebrow">Contact</p>
+            <h1>Passons à l'action</h1>
+            <p class="contact-line">Site : <a href="https://ivoiretech-solutions.com">ivoiretech-solutions.com</a></p>
+            <p class="contact-line">Contact : <a href="mailto:contact@ivoiretech-solutions.com">contact@ivoiretech-solutions.com</a></p>
+            <p class="contact-line">Référence technique : <a href="mailto:franck.kouassi@ivoiretech-solutions.com">franck.kouassi@ivoiretech-solutions.com</a></p>
+            <p class="lead" style="margin-top:1.5rem; color:rgba(255,255,255,0.8);">
+                Demandez le <strong style="color:var(--secondary)">diagnostic gratuit</strong> — nous partons de vos données telles qu'elles sont aujourd'hui.
+            </p>
+            <div class="slide__footer"><span>Merci</span><span class="bar"></span><span>12 / 12</span></div>
+        </section>
+    </div>
+
+    <p class="nav-hint" aria-hidden="true">← → ou clic pour naviguer · F11 plein écran</p>
+
+    <script>
+        (function () {
+            var slides = Array.prototype.slice.call(document.querySelectorAll('.slide'));
+            var index = 0;
+
+            function show(i) {
+                index = (i + slides.length) % slides.length;
+                slides.forEach(function (s, j) {
+                    s.classList.toggle('is-active', j === index);
+                });
+            }
+
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') {
+                    e.preventDefault();
+                    show(index + 1);
+                }
+                if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
+                    e.preventDefault();
+                    show(index - 1);
+                }
+                if (e.key === 'Home') show(0);
+                if (e.key === 'End') show(slides.length - 1);
+            });
+
+            document.getElementById('deck').addEventListener('click', function (e) {
+                var x = e.clientX / window.innerWidth;
+                show(x > 0.35 ? index + 1 : index - 1);
+            });
+
+            show(0);
+        })();
+    </script>
+</body>
+</html>
