@@ -197,12 +197,11 @@ const translations = {
         colab_aka_role: "Ingénieur sécurité & réseaux · Cybersécurité",
         colab_aka_edu: "Master Ingénierie informatique — Cybersécurité (ESIEE-IT) · Master Cryptographie & Calcul formel — Paris-Saclay",
         colab_aka_p1: "Brou Nicaise AKA est ingénieur sécurité et réseaux informatiques, titulaire d’un Master en ingénierie informatique spécialisé cybersécurité (ESIEE-IT, Pontoise) et d’un Master en cryptographie et calcul formel (Université Paris-Saclay). Il pilote la sécurité du SI, les sauvegardes et la réponse aux incidents.",
-        colab_aka_p2: "Chez LJC-Beauvallet, il administre l’Active Directory, les pare-feu, EDR/XDR et EPP, mène des campagnes de phishing et de sensibilisation, conseille la DSI sur les décisions cyber et coordonne les projets cybersécurité et réseau (on-premise et cloud). Certifié ISO 27001 et ISO 22301 Lead Implementer.",
+        colab_aka_p2: "Il administre l’Active Directory, les pare-feu, EDR/XDR et EPP, mène des campagnes de phishing et de sensibilisation, conseille la direction des systèmes d’information sur les décisions cyber et coordonne les projets cybersécurité et réseau (on-premise et cloud). Certifié ISO 27001 et ISO 22301 Lead Implementer.",
         colab_aka_h1: "Master Cybersécurité — ESIEE-IT (Pontoise)",
         colab_aka_h2: "Master Cryptographie — Université Paris-Saclay",
         colab_aka_h3: "EDR/XDR, EPP, Active Directory, réponse à incident",
         colab_aka_h4: "ISO 27001 · ISO 22301 · Azure Fundamentals",
-        team_cv_pdf: "Télécharger le CV (PDF)",
 
         /* Affoué Marie Josée YAO */
         colab_yao_role: "Data Analyst · Business Intelligence",
@@ -583,12 +582,11 @@ const translations = {
         colab_aka_role: "Security & Network Engineer · Cybersecurity",
         colab_aka_edu: "Master’s in Computer Engineering — Cybersecurity (ESIEE-IT) · Master’s in Cryptography & Formal Computation — Paris-Saclay",
         colab_aka_p1: "Brou Nicaise AKA is a security and network engineer with a Master’s in computer engineering focused on cybersecurity (ESIEE-IT, Pontoise) and a Master’s in cryptography and formal computation (Université Paris-Saclay). He leads IS security, backups and incident response.",
-        colab_aka_p2: "At LJC-Beauvallet, he manages Active Directory, firewalls, EDR/XDR and EPP, runs phishing and awareness campaigns, advises the IT department on cyber decisions and leads cybersecurity and network projects (on-premise and cloud). ISO 27001 and ISO 22301 Lead Implementer certified.",
+        colab_aka_p2: "He manages Active Directory, firewalls, EDR/XDR and EPP, runs phishing and awareness campaigns, advises IT leadership on cyber decisions and leads cybersecurity and network projects (on-premise and cloud). ISO 27001 and ISO 22301 Lead Implementer certified.",
         colab_aka_h1: "Master’s in Cybersecurity — ESIEE-IT (Pontoise)",
         colab_aka_h2: "Master’s in Cryptography — Université Paris-Saclay",
         colab_aka_h3: "EDR/XDR, EPP, Active Directory, incident response",
         colab_aka_h4: "ISO 27001 · ISO 22301 · Azure Fundamentals",
-        team_cv_pdf: "Download CV (PDF)",
 
         /* Affoué Marie Josée YAO */
         colab_yao_role: "Data Analyst · Business Intelligence",
